@@ -5,97 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendors/multiscroll/jquery.multiscroll.css" />
+
     <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/multiscroll/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/multiscroll/jquery.multiscroll.js"></script>
     <title>NGR</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myContainer').multiscroll({
+                anchors: ['first', 'second', 'third'],
+                navigation: false,
+                loopBottom: false,
+                loopTop: false
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <section class="container-initial-grid">
-        <div class="carrusel">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item  active">
-                        <div class="item item-1"></div>
+    <div id="myContainer">
+
+        <div class="ms-left">
+            <div class="ms-section"
+                style="background:url(assets/images/bbleft.jpg); background-position: center center; background-size: cover  ;"
+                id="left1">
+                <div class="container-brand">
+                    <div class="text-center">
+                        <img class="logo-bb" src="assets/images/bembos-w.png" alt="logo-bembos">
                     </div>
-                    <div class="carousel-item item-2">
-                        <div class="item item-2"></div>
-                    </div>
-                    <div class="carousel-item item-3">
-                        <div class="item item-3"></div>
-                    </div>
-                    <div class="carousel-item item-4">
-                        <div class="item item-4"></div>
-                    </div>
-                    <div class="carousel-item item-5">
-                        <div class="item item-5"></div>
-                    </div>
-                    <div class="carousel-item item-6">
-                        <div class="item item-6"></div>
-                    </div>
-                    <div class="carousel-item item-7">
-                        <div class="item item-7"></div>
+
+                    <h2 class="title-brand text-white title-bb">Hamburguesas únicas e innovadoras con sazón peruana</h2>
+                    <p class="text-white text-content text-content-bb">Desde 1988, seguimos creando e innovando cada día
+                        más con nuestras hamburguesas que marcan la tendencia con calidad y sabor peruano.</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/casa.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/factura.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/cartera.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-        <div class="info-principal">
 
-            <div class="information">
-                <div class="information-content">
-                    <img class="m-4" src="assets/images/logo-ngr-xl.png" alt="logo">
-                    <p class="">Somos el <span class="font-weight-bold">holding gastronómico</span> del grupo <span
-                            class="font-weight-bold">Intercorp</span> que consta de restaurantes reconocidos en el
-                        medio y cada uno de ellos guarda una historia y tradición que los paladares peruanos prefieren.
-                    </p>
-                    <button class="btn-comprobantes m-4">Comprobantes electrónicos</button>
-
-                </div>
-
+            <div class="ms-section" id="left2">
+                <h1>Left 2 </h1>
             </div>
-            <p class="footer-text ">2019. NG Restaurants. Todos los Derechos Reservados.
-            </p>
+
+            <div class="ms-section" id="left3">
+                <h1>Left 3</h1>
+            </div>
         </div>
 
-        <div class="brands">
-            <div>
-                <img src="assets/images/bembos.png" alt="">
+        <div class="ms-right">
+            <div class="ms-section"
+                style="background:url(assets/images/bbright.jpg); background-position: center center; background-size: cover  ;"
+                id="right1">
+                
             </div>
-            <div>
-                <img src="assets/images/popeyes.png" alt="">
+
+            <div class="ms-section" id="right2">
+                <h1>Right 2</h1>
             </div>
-            <div>
-                <img src="assets/images/dunkin-donuts.png" alt="">
-            </div>
-            <div>
-                <img src="assets/images/don-belisario.png" alt="">
-            </div>
-            <div>
-                <img src="assets/images/logo-papajhons.png" alt="">
-            </div>
-            <div>
-                <img src="assets/images/chinawok.png" alt="">
-            </div>
-            <div>
-                <img src="assets/images/wang.png" alt="">
+
+            <div class="ms-section" id="right3">
+                <h1>Right 3</h1>
             </div>
         </div>
-    </section>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+
+
 </body>
 
 </html>

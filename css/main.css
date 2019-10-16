@@ -1,226 +1,110 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    font-family: 'Rubik', sans-serif;
-    color: #92847E;
+
+/* Bembos */
+@font-face {
+    font-family: "big noodle";
+    src: url("../assets/fonts/big_noodle_titling.ttf");
+  }
+
+  @font-face {
+    font-family: "knockout";
+    src: url("../assets/fonts/knockout-htf-90-ultmt-welterwt-1361516702.ttf");
+  }
+
+  @font-face {
+    font-family: "din1451";
+    src: url("../assets/fonts/DIN1451StdEngschrift.ttf");
+  }
+
+
+
+  body{
+      margin: 0;
+      padding: 0;
+  }
+
+  p,h2{
+      margin: 0;
+
+  }
+
+
+  .mb-1{
+      margin: 1.5em ;
+  }
+
+
+  .text-center{
+      text-align: center;
+  }
+
+
+.text-white{
+    color: white;
 }
 
-.container-initial-grid {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: .3fr 1fr 1fr;
+.title-brand{
+    font-size: 50px;
+    margin-bottom: 20px;
+    
+}
 
+.title-bb{
+    font-family: big noodle, sans-serif;
+    font-weight: lighter;
+}
+
+.text-content{
+    font-size: 24px;
+    margin-bottom: 2em;
 }
 
 
-
-.info-principal {
-
-    display: grid;
-    grid-template-rows: 4fr .2fr;
-    justify-items: center;
+.text-content-bb{
+    font-family: din1451, sans-serif;
 }
 
-.brands {
-    width: 100%;
-    height: 300px;
+.logo-bb{
+    width: 240px;
+}
+
+
+.circle-icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-group{
+    width: 40px;
+}
+
+.circle-bb{
+    background-color: white;
+}
+
+.container-brand{
+    padding-left:  2em;
+    padding-right:  2em;
+}
+
+.text-link{
+    font-family: din1451;
+    font-size: 16px;
+}
+
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-links{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-}
-
-.brands img {
-    width: 100px;
-    opacity: 0.4;
-    transition: .5s;
-}
-
-.brands img:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.information {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.information-content {
-    position: relative;
- 
-max-width: 300px;
-}
-
-.btn-comprobantes {
-    border: none;
-    border-radius: 10px;
-    background-color: #F08D24;
-    color: white;
-    padding: 1em;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 240px;
-    transition: .5s;
-}
-
-.btn-comprobantes:hover {
-    background-color: rgb(212, 125, 31);
-}
-
-.carrusel img {
-    height: 100vh;
-}
-
-.item {
-    height: 182px;
-    width: 100%;
-
-}
-
-.item-1 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background: url('../assets/images/BB1.jpg');
-    background-size: cover;
-    background-position: center center;
-
-}
-
-.item-2 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background-image: url('../assets/images/CW-01-01-02.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-.item-3 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background: url('../assets/images/DD-02.jpg');
-    background-size: cover;
-    background-position: top center;
-}
-
-.item-4 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background: url('../assets/images/PJ-02.jpg');
-    background-size: cover;
-    background-position: bottom center;
-}
-
-.item-5 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background-image: url('../assets/images/Wang-02.jpg');
-    background-size: cover;
-    background-position: top center;
-}
-
-.item-6 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background-image: url('../assets/images/DB-01.jpg');
-    background-size: cover;
-    background-position: center center;
-
-}
-
-.item-7 {
-    clip-path: polygon(0px 0px, 100% 0px, 100% 62.08%, 0px 100%);
-    background-image: url('../assets/images/Popeyes-02.jpg');
-    background-size: cover;
-    background-position: center center;
-}
-
-.footer-text {
-    position: relative;
-    margin-top: 3em;
-    font-size: 12px;
-    bottom: 0;
-}
-
-.hidden-mobile {
-    display: none;
-}
-
-@media screen and (min-width:768px) {
-    .container-initial-grid {
-        grid-template-columns: 1.5fr 1fr .3fr;
-        grid-template-rows: none;
-    }
-
-    .brands {
-        height: 100vh;
-        grid-template-rows: repeat(7, 1fr);
-        grid-template-columns: none;
-    }
-
-    .item {
-        height: 100vh;
-    }
-
-    .item-1 {
-        clip-path: none;
-        background: url('../assets/images/BB1.jpg');
-        background-size: cover;
-        background-position: center center;
-    
-    }
-    
-    .item-2 {
-        clip-path: none;
-        background-image: url('../assets/images/CW-01-01-02.jpg');
-        background-size: cover;
-        background-position: center center;
-    }
-    
-    .item-3 {
-        clip-path: none;
-        background: url('../assets/images/DD-02.jpg');
-        background-size: cover;
-        background-position: top center;
-    }
-    
-    .item-4 {
-        clip-path: none;
-        background: url('../assets/images/PJ-02.jpg');
-        background-size: cover;
-        background-position: bottom center;
-    }
-    
-    .item-5 {
-        clip-path: none;
-        background-image: url('../assets/images/Wang-02.jpg');
-        background-size: cover;
-        background-position: top center;
-    }
-    
-    .item-6 {
-        clip-path: none;
-        background-image: url('../assets/images/DB-01.jpg');
-        background-size: cover;
-        background-position: center center;
-    
-    }
-    
-    .item-7 {
-        clip-path: none;
-        background-image: url('../assets/images/Popeyes-02.jpg');
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .information {
-        align-items: center;
-    }
-
-
-
-    .info-principal {
-        height: 100vh;
-    }
-
-    .hidden-mobile {
-        display: block;
-    }
 }
