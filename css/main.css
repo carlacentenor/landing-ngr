@@ -1,74 +1,81 @@
-
 /* Bembos */
 @font-face {
     font-family: "big noodle";
     src: url("../assets/fonts/big_noodle_titling.ttf");
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "knockout";
     src: url("../assets/fonts/knockout-htf-90-ultmt-welterwt-1361516702.ttf");
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "din1451";
     src: url("../assets/fonts/DIN1451StdEngschrift.ttf");
-  }
+}
 
 
 
-  body{
-      margin: 0;
-      padding: 0;
-  }
+body {
+    margin: 0;
+    padding: 0;
+}
 
-  p,h2{
-      margin: 0;
+p,
+h2 {
+    margin: 0;
 
-  }
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.mb-1 {
+    margin: 1.5em;
+}
 
 
-  .mb-1{
-      margin: 1.5em ;
-  }
+.text-center {
+    text-align: center;
+}
 
 
-  .text-center{
-      text-align: center;
-  }
-
-
-.text-white{
+.text-white {
     color: white;
 }
 
-.title-brand{
+.title-brand {
     font-size: 50px;
     margin-bottom: 20px;
-    
+
 }
 
-.title-bb{
+.title-bb {
     font-family: big noodle, sans-serif;
     font-weight: lighter;
 }
 
-.text-content{
+.text-content {
     font-size: 24px;
     margin-bottom: 2em;
 }
 
 
-.text-content-bb{
+.text-content-bb {
     font-family: din1451, sans-serif;
 }
 
-.logo-bb{
+.logo-bb {
     width: 240px;
 }
 
 
-.circle-icon{
+.circle-icon {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -77,34 +84,83 @@
     justify-content: center;
 }
 
-.icon-group{
+.icon-group {
     width: 40px;
 }
 
-.circle-bb{
+
+.circle-bb {
     background-color: white;
 }
 
-.container-brand{
-    padding-left:  2em;
-    padding-right:  2em;
+.container-brand {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.text-link{
+.text-link {
     font-family: din1451;
     font-size: 16px;
+    margin-top: 5px;
 }
 
 
-.flex-center{
+.arrow-down{
+    left: 0px;
+    top: 88%;
+    animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes scrollDown {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+.icon-down{
+    width: 50px;
+}
+
+.container-logo-fix{
+    width: 150px;
+    height: 65px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    
+}
+
+.logo-ngr-fix{
+    width: 100px;
+}
+
+
+.fixed-container{
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.grid-links{
+.grid-links {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
 }
+

@@ -16,7 +16,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#myContainer').multiscroll({
-                anchors: ['first', 'second', 'third'],
+                anchors: ['first', 'second', 'third','four'],
                 navigation: false,
                 loopBottom: false,
                 loopTop: false
@@ -26,14 +26,20 @@
 </head>
 
 <body>
+    <div class="fixed-container">
+        <div class="container-logo-fix flex-center">
+            <img class="logo-ngr-fix" src="assets/images/logo-ngr-xl.png" alt="logo-ngr">
+        </div>
+    </div>
     <div id="myContainer">
 
         <div class="ms-left">
             <div class="ms-section"
-                style="background:url(assets/images/bbleft.jpg); background-position: center center; background-size: cover  ;"
+                style="background:url(assets/images/bbl.jpg); background-position: center center; background-size: cover  ;"
                 id="left1">
+
                 <div class="container-brand">
-                    <div class="text-center">
+                    <div class="text-center mb-1">
                         <img class="logo-bb" src="assets/images/bembos-w.png" alt="logo-bembos">
                     </div>
 
@@ -44,7 +50,7 @@
                         <div>
                             <div class="flex-center">
                                 <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/casa.svg" alt="home">
+                                    <img class="icon-group" src="assets/icons/homebb.svg" alt="home">
                                 </div>
                             </div>
                             <p class="text-white text-link text-center">Visita nuestra web</p>
@@ -52,15 +58,15 @@
                         <div>
                             <div class="flex-center">
                                 <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/factura.svg" alt="home">
+                                    <img class="icon-group" src="assets/icons/billbb.svg" alt="comprobantes">
                                 </div>
                             </div>
-                            <p class="text-white text-link text-center">Comprobantes electrónicos</p>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
                         </div>
                         <div>
                             <div class="flex-center">
                                 <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/cartera.svg" alt="home">
+                                    <img class="icon-group" src="assets/icons/workbb.svg" alt="trabajo">
                                 </div>
                             </div>
                             <p class="text-white text-link text-center">Trabaja con nosotros</p>
@@ -70,31 +76,163 @@
 
             </div>
 
-            <div class="ms-section" id="left2">
-                <h1>Left 2 </h1>
+            <div class="ms-section"
+                style="background:url(assets/images/pjl.jpg); background-position: center center; background-size: cover  ;"
+                id="left2">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-bb" src="assets/images/logo-pj.png" alt="logo-pj">
+                    </div>
+
+                    <h2 class="title-brand text-white ">Mejores ingredientes, mejor pizza</h2>
+                    <p class="text-white text-content text-content-bb">Con más de 30 años y 5 mil locales en 45 países, somos una de las cadenas más grandes del mundo.</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/homepj.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/facturapj.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/workpj.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="ms-section" id="left3">
-                <h1>Left 3</h1>
+            <div class="ms-section"
+                style="background:url(assets/images/cwl.jpg) ; background-size: cover  ;"
+                id="left3">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-bb" src="assets/icons/chinawok-logo.png" alt="logo-cw
+                        ">
+                    </div>
+
+                    <h2 class="title-brand text-white title-bb">El generoso sabor del chifa peruano </h2>
+                    <p class="text-white text-content text-content-bb">La generosidad, la innovación y la creatividad llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/homecw.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/facturacw.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/workcw.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section"
+                style="background:url(assets/images/dbl.jpg); background-position: center center;  background-size: cover  ;"
+                id="left4">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-bb" src="assets/icons/chinawok-logo.png" alt="logo-cw
+                        ">
+                    </div>
+
+                    <h2 class="title-brand text-white title-bb">El generoso sabor del chifa peruano </h2>
+                    <p class="text-white text-content text-content-bb">La generosidad, la innovación y la creatividad llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/homecw.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/facturacw.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/workcw.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="ms-right">
             <div class="ms-section"
-                style="background:url(assets/images/bbright.jpg); background-position: center center; background-size: cover  ;"
+                style="background:url(assets/images/bbr.jpg);background-position: center center; background-size: cover ;background-repeat: no-repeat; ; border-left: 1px solid white;"
                 id="right1">
-                
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                </div> 
             </div>
 
-            <div class="ms-section" id="right2">
-                <h1>Right 2</h1>
+            <div class="ms-section"
+                style="background:url(assets/images/pjr.jpg); background-position: center center; background-size: cover  ; border-left: 1px solid white;"
+                id="right2">
+
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                </div>
             </div>
 
-            <div class="ms-section" id="right3">
-                <h1>Right 3</h1>
+
+            <div class="ms-section"
+                style="background:url(assets/images/cwr.jpg);  background-size: cover  ; border-left: 1px solid white;"
+                id="right4">
+
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                </div>
+            </div>
+            <div class="ms-section"
+            style="background:url(assets/images/dbr.jpg);  background-size: cover;  background-position: center center ; border-left: 1px solid white;"
+            id="right3">
+
+            <div class="absolute arrow-down">
+                <img class="icon-down" src="assets/icons/down3.svg" alt="down">
             </div>
         </div>
+        </div>
     </div>
+
 
 
 
