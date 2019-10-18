@@ -453,6 +453,16 @@
                 'right': rightDestination.position().top
             };
 
+            
+// Quitar fixed 
+            if(topPos.left>0){
+
+                $('.fixed-container').fadeIn('slow');
+            }
+            else{
+                $('.hide').fadeOut('slow');
+            }
+
             rightDestination.addClass('active').siblings().removeClass('active');
             leftDestination.addClass('active').siblings().removeClass('active');
 

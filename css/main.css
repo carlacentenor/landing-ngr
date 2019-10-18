@@ -13,8 +13,36 @@
     font-family: "din1451";
     src: url("../assets/fonts/DIN1451StdEngschrift.ttf");
 }
+/* NGR */
+@font-face {
+    font-family: "omnes";
+    src: url("../assets/fonts/Omnes_Regular.ttf");
+}
+@font-face {
+    font-family: "omnes-semibold";
+    src: url("../assets/fonts/omnes-semibold-webfont.ttf");
+}
 
+/* PJ */
+@font-face {
+    font-family: "italian-bold";
+    src: url("../assets/fonts/ItalianPlateNo2-Bold.otf");
+}
+@font-face {
+    font-family: "italian";
+    src: url("../assets/fonts/ItalianPlateNo2-Regular.otf");
+}
 
+/* CW */
+@font-face {
+    font-family: "frankfurter";
+    src: url("../assets/fonts/FrankfurterMediumStdRegular.otf");
+}
+
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../assets/fonts/helveticaneue.ttf");
+}
 
 body {
     margin: 0;
@@ -36,9 +64,12 @@ h2 {
 }
 
 .mb-1 {
-    margin: 1.5em;
+    margin-bottom: 1.5em;
 }
 
+.mb-2{
+    margin-bottom: 2em;
+}
 
 .text-center {
     text-align: center;
@@ -49,8 +80,12 @@ h2 {
     color: white;
 }
 
+.text-gray{
+    color: #92847E;
+}
+
 .title-brand {
-    font-size: 50px;
+    font-size: 44px;
     margin-bottom: 20px;
 
 }
@@ -70,10 +105,47 @@ h2 {
     font-family: din1451, sans-serif;
 }
 
+.text-content-ngr{
+    font-family: omnes-semibold , sans-serif;
+    font-size: 24px;
+    
+}
+
+.text-content-pj{
+    font-family: italian , sans-serif;
+    font-size: 22px;
+    
+}
+
+.text-content-cw{
+    font-family: helveticaneue,sans-serif;
+    font-size: 20px;
+}
+
+.title-brand-cw{
+    font-family: frankfurter;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.title-brand-pj{
+    font-family: italian-bold , sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    
+}
+
 .logo-bb {
     width: 240px;
 }
 
+.logo-pp {
+    width: 185px;
+}
+
+.logo-cw{
+    width: 180px;
+}
 
 .circle-icon {
     width: 75px;
@@ -86,6 +158,7 @@ h2 {
 
 .icon-group {
     width: 40px;
+    height: 40px;
 }
 
 
@@ -93,9 +166,27 @@ h2 {
     background-color: white;
 }
 
+.circle-db{
+    background-color: #CF112D;
+}
+
+.circle-ngr{
+    background-color: #F08D24;
+}
+
 .container-brand {
-    padding-left: 2em;
-    padding-right: 2em;
+    
+    display: grid;
+    grid-template-columns: minmax(auto,450px);
+    justify-content: center;
+}
+
+.gap{
+    grid-gap: 3em;
+}
+
+.intercorp{
+    width: 150px;
 }
 
 .text-link {
@@ -104,10 +195,23 @@ h2 {
     margin-top: 5px;
 }
 
+.text-link-ngr{
+    font-family: omnes;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 
 .arrow-down{
     left: 0px;
     top: 88%;
+    animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.arrow-down-ngr{
+    left: 0px;
+    top: 86%;
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -127,6 +231,12 @@ h2 {
 
 .icon-down{
     width: 50px;
+}
+
+
+.icon-scroll{
+    width: 30px;
+    
 }
 
 .container-logo-fix{
@@ -164,3 +274,15 @@ h2 {
     justify-items: center;
 }
 
+
+.grid-links-ngr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+.hide{
+    display: none;
+}

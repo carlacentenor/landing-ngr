@@ -12,21 +12,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/vendors/multiscroll/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="assets/vendors/multiscroll/jquery.multiscroll.js"></script>
+    <script src="js/app.js"></script>
     <title>NGR</title>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#myContainer').multiscroll({
-                anchors: ['first', 'second', 'third','four'],
-                navigation: false,
-                loopBottom: false,
-                loopTop: false
-            });
-        });
-    </script>
+    
 </head>
 
 <body>
-    <div class="fixed-container">
+    <div class="fixed-container hide">
         <div class="container-logo-fix flex-center">
             <img class="logo-ngr-fix" src="assets/images/logo-ngr-xl.png" alt="logo-ngr">
         </div>
@@ -34,6 +26,43 @@
     <div id="myContainer">
 
         <div class="ms-left">
+                <div class="ms-section"
+                style="background:url(assets/images/ngrl.jpg)  no-repeat center center ; background-position: center center; background-size: cover  ;"
+                id="left1">
+
+                <div class="container-brand gap">
+                    <div class="text-center ">
+                        <img class="logo-bb" src="assets/images/logo-ngr.png" alt="logo-ngr">
+                    </div>
+
+                    <p class="text-gray  text-content-ngr text-center">Entregamos CARIÑO y ENERGÍA a nuestros clientes y colaboradores, a través del sabor y experiencias únicas.
+                        </p>
+
+                        <div class="flex-center ">
+                            <img class="intercorp" src="assets/icons/intercorp.png" alt="">
+                        </div>
+                    <div class="grid-links-ngr ">
+                    
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-ngr">
+                                    <img class="icon-group" src="assets/icons/facturadb.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-gray text-link-ngr text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-ngr">
+                                    <img class="icon-group" src="assets/icons/workdb.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-gray text-link-ngr text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="ms-section"
                 style="background:url(assets/images/bbl.jpg); background-position: center center; background-size: cover  ;"
                 id="left1">
@@ -84,8 +113,9 @@
                         <img class="logo-bb" src="assets/images/logo-pj.png" alt="logo-pj">
                     </div>
 
-                    <h2 class="title-brand text-white ">Mejores ingredientes, mejor pizza</h2>
-                    <p class="text-white text-content text-content-bb">Con más de 30 años y 5 mil locales en 45 países, somos una de las cadenas más grandes del mundo.</p>
+                    <h2 class="title-brand-pj text-white ">Mejores ingredientes, mejor pizza</h2>
+                    <p class="text-white text-content text-content-pj">Con más de 30 años y 5 mil locales en 45 países,
+                        somos una de las cadenas más grandes del mundo.</p>
                     <div class="grid-links">
                         <div>
                             <div class="flex-center">
@@ -115,43 +145,43 @@
                 </div>
             </div>
 
-            <div class="ms-section"
-                style="background:url(assets/images/cwl.jpg) ; background-size: cover  ;"
+            <div class="ms-section" style="background:url(assets/images/cwl.jpg) ; background-size: cover  ;"
                 id="left3">
                 <div class="container-brand">
                     <div class="text-center mb-1">
-                        <img class="logo-bb" src="assets/icons/chinawok-logo.png" alt="logo-cw
+                        <img class="logo-cw" src="assets/icons/chinawok-logo.png" alt="logo-cw
                         ">
                     </div>
 
-                    <h2 class="title-brand text-white title-bb">El generoso sabor del chifa peruano </h2>
-                    <p class="text-white text-content text-content-bb">La generosidad, la innovación y la creatividad llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
-                    <div class="grid-links">
-                        <div>
-                            <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/homecw.svg" alt="home">
+                    <h2 class="title-brand-cw text-white title-bb">El generoso sabor del chifa peruano </h2>
+                    <p class="text-white text-content text-content-cw">La generosidad, la innovación y la creatividad
+                        llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
+                        <div class="grid-links">
+                            <div>
+                                <div class="flex-center">
+                                    <div class="circle-icon circle-bb">
+                                        <img class="icon-group" src="assets/icons/homecw.svg" alt="home">
+                                    </div>
                                 </div>
+                                <p class="text-white text-link text-center">Visita nuestra web</p>
                             </div>
-                            <p class="text-white text-link text-center">Visita nuestra web</p>
-                        </div>
-                        <div>
-                            <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/facturacw.svg" alt="comprobantes">
+                            <div>
+                                <div class="flex-center">
+                                    <div class="circle-icon circle-bb">
+                                        <img class="icon-group" src="assets/icons/facturacw.svg" alt="comprobantes">
+                                    </div>
                                 </div>
+                                <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
                             </div>
-                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
-                        </div>
-                        <div>
-                            <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/workcw.svg" alt="trabajo">
+                            <div>
+                                <div class="flex-center">
+                                    <div class="circle-icon circle-bb">
+                                        <img class="icon-group" src="assets/icons/workcw.svg" alt="trabajo">
+                                    </div>
                                 </div>
+                                <p class="text-white text-link text-center">Trabaja con nosotros</p>
                             </div>
-                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="ms-section"
@@ -159,33 +189,35 @@
                 id="left4">
                 <div class="container-brand">
                     <div class="text-center mb-1">
-                        <img class="logo-bb" src="assets/icons/chinawok-logo.png" alt="logo-cw
+                        <img class="logo-bb" src="assets/images/don-belisario.png" alt="logo-db
                         ">
                     </div>
 
-                    <h2 class="title-brand text-white title-bb">El generoso sabor del chifa peruano </h2>
-                    <p class="text-white text-content text-content-bb">La generosidad, la innovación y la creatividad llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
+                    <h2 class="title-brand text-white title-bb">El mejor pollo a la brasa con riquísimas guarniciones
+                    </h2>
+                    <p class="text-white text-content text-content-bb">En 2013 comenzamos nuestra aventura apostando por
+                        un concepto distinto de Pollos a la brasa y es así, como conquistamos a todos los peruanos.</p>
                     <div class="grid-links">
                         <div>
                             <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/homecw.svg" alt="home">
+                                <div class="circle-icon circle-db">
+                                    <img class="icon-group" src="assets/icons/homedb.svg" alt="home">
                                 </div>
                             </div>
                             <p class="text-white text-link text-center">Visita nuestra web</p>
                         </div>
                         <div>
                             <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/facturacw.svg" alt="comprobantes">
+                                <div class="circle-icon circle-db">
+                                    <img class="icon-group" src="assets/icons/facturadb.svg" alt="comprobantes">
                                 </div>
                             </div>
                             <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
                         </div>
                         <div>
                             <div class="flex-center">
-                                <div class="circle-icon circle-bb">
-                                    <img class="icon-group" src="assets/icons/workcw.svg" alt="trabajo">
+                                <div class="circle-icon circle-db">
+                                    <img class="icon-group" src="assets/icons/workdb.svg" alt="trabajo">
                                 </div>
                             </div>
                             <p class="text-white text-link text-center">Trabaja con nosotros</p>
@@ -193,43 +225,174 @@
                     </div>
                 </div>
             </div>
+            <div class="ms-section"
+                style="background:url(assets/images/ppl.jpg); background-position: center center;  background-size: cover  ;"
+                id="left5">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-pp" src="assets/images/popeyes-logo.png" alt="logo-pp
+                        ">
+                    </div>
+
+                    <h2 class="title-brand text-white title-bb">El mejor pollo frito con la sazón cajún que conquista
+                    </h2>
+                    <p class="text-white text-content text-content-bb">La sazón tradicional de Louisiana llega a Perú el
+                        2012 para conquistar el paladar de los peruanos con el mejor pollo frito estilo cajún
+                        .</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/homepp.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/facturapp.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/workpp.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section"
+                style="background:url(assets/images/ddl.jpg); background-position: center center;  background-size: cover  ;"
+                id="left5">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-bb" src="assets/images/dunkin-donuts-logo.png" alt="logo-dd
+                        ">
+                    </div>
+
+                    <h2 class="title-brand text-white title-bb">Cerca de ti para endulzar y energizar tu día </h2>
+                    <p class="text-white text-content text-content-bb">Dunkin Donuts llega al Perú en 1996 para endulzar
+                        y energizar con las mejores donuts y café al instante
+                        .</p>
+                    <div class="grid-links">
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/homedd.svg" alt="home">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Visita nuestra web</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/facturadd.svg" alt="comprobantes">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center ">Comprobantes electrónicos</p>
+                        </div>
+                        <div>
+                            <div class="flex-center">
+                                <div class="circle-icon circle-bb">
+                                    <img class="icon-group" src="assets/icons/workdd.svg" alt="trabajo">
+                                </div>
+                            </div>
+                            <p class="text-white text-link text-center">Trabaja con nosotros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-section"
+                style="background:url(assets/images/whl.jpg)  no-repeat center center ;  background-size: cover  ;"
+                id="left5">
+                <div class="container-brand">
+                    <div class="text-center mb-1">
+                        <img class="logo-bb" src="assets/images/wang.png" alt="logo-wh
+                        ">
+                    </div>
+
+                    <h2 class="title-brand text-white title-bb">Fusión de misticismo chino y contundencia peruana </h2>
+                    <p class="text-white text-content text-content-bb">Hace 4 años la sabiduría y el misticismo oriental
+                        se unieron a la sazón peruana para crear Wang & Hnos.
+                        <br>
+                        Queremos ganarnos el corazón de todos los peruanos y llegar a cada espacio con nuestra comida.
+                        .</p>
+                   
+                </div>
+            </div>
         </div>
 
         <div class="ms-right">
+                <div class="ms-section"
+                style="background:url(assets/images/ngrr.jpg)  no-repeat center center ;background-position: center center; background-size: cover ;background-repeat: no-repeat;"
+                id="right1">
+                <div class="absolute arrow-down-ngr">
+                    <img class="icon-scroll" src="assets/icons/scrool.svg" alt="down">
+                </div>
+            </div>
             <div class="ms-section"
                 style="background:url(assets/images/bbr.jpg);background-position: center center; background-size: cover ;background-repeat: no-repeat; ; border-left: 1px solid white;"
                 id="right1">
                 <div class="absolute arrow-down">
-                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
-                </div> 
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
+                </div>
             </div>
-
             <div class="ms-section"
                 style="background:url(assets/images/pjr.jpg); background-position: center center; background-size: cover  ; border-left: 1px solid white;"
                 id="right2">
 
                 <div class="absolute arrow-down">
-                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
                 </div>
             </div>
-
-
             <div class="ms-section"
                 style="background:url(assets/images/cwr.jpg);  background-size: cover  ; border-left: 1px solid white;"
                 id="right4">
 
                 <div class="absolute arrow-down">
-                    <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
                 </div>
             </div>
             <div class="ms-section"
-            style="background:url(assets/images/dbr.jpg);  background-size: cover;  background-position: center center ; border-left: 1px solid white;"
-            id="right3">
+                style="background:url(assets/images/dbr.jpg);  background-size: cover;  background-position: center center ; border-left: 1px solid white;"
+                id="right3">
 
-            <div class="absolute arrow-down">
-                <img class="icon-down" src="assets/icons/down3.svg" alt="down">
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
+                </div>
             </div>
-        </div>
+            <div class="ms-section"
+                style="background:url(assets/images/ppr.jpg);  background-size: cover;  background-position: center center ; border-left: 1px solid white;"
+                id="right5">
+
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
+                </div>
+            </div>
+            <div class="ms-section"
+                style="background:url(assets/images/ddr.jpg);  background-size: cover;  background-position: center center ; border-left: 1px solid white;"
+                id="right5">
+
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
+                </div>
+            </div>
+            <div class="ms-section"
+                style="background:url(assets/images/whr.jpg)  no-repeat center ;  background-size: cover; border-left: 1px solid white;"
+                id="right5">
+<div>
+   
+</div>
+                <div class="absolute arrow-down">
+                    <img class="icon-down" src="assets/icons/down4.svg" alt="down">
+                </div>
+            </div>
         </div>
     </div>
 
