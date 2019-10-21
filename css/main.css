@@ -44,6 +44,41 @@
     src: url("../assets/fonts/helveticaneue.ttf");
 }
 
+/* DB */
+@font-face {
+    font-family: "Tungsten-bold";
+    src: url("../assets/fonts/Tungsten-Bold.otf");
+}
+
+@font-face {
+    font-family: "Archer";
+    src: url("../assets/fonts/Archer-Medium-Pro.otf");
+}
+
+/* PP */
+
+@font-face {
+    font-family: "Belizio";
+    src: url("../assets/fonts/Belizio-Black.otf");
+}
+
+@font-face {
+    font-family: "Metro";
+    src: url("../assets/fonts/MetroMediumLT-Two.ttf");
+}
+
+/* DD */
+
+@font-face {
+    font-family: "FrankfurterHH";
+    src: url("../assets/fonts/Frankfurter-HH.otf");
+}
+
+@font-face {
+    font-family: "FrankfurterDmed";
+    src: url("../assets/fonts/FrankfurterDMed.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -55,6 +90,9 @@ h2 {
 
 }
 
+a{
+    text-decoration: none;
+}
 .absolute{
     position: absolute;
 }
@@ -111,6 +149,21 @@ h2 {
     
 }
 
+.text-content-counter{
+    font-family: omnes-semibold , sans-serif;
+    font-size: 36px;
+    
+}
+
+.phrases-star{
+    color :#F08D24;
+    font-weight: bold;
+}
+
+.phares-star-2{
+    color :#F08D24;
+    font-weight: bold;
+}
 .text-content-pj{
     font-family: italian , sans-serif;
     font-size: 22px;
@@ -122,6 +175,22 @@ h2 {
     font-size: 20px;
 }
 
+.text-content-db{
+    font-family: Archer,sans-serif;
+    font-size: 20px;
+}
+
+.text-content-pp{
+    font-family: Metro,sans-serif;
+    font-size: 20px;
+}
+
+.text-content-dd{
+    font-family: FrankfurterDmed,sans-serif;
+    font-size: 24px;
+}
+
+
 .title-brand-cw{
     font-family: frankfurter;
     text-transform: uppercase;
@@ -132,6 +201,28 @@ h2 {
     font-family: italian-bold , sans-serif;
     text-transform: uppercase;
     font-size: 50px;
+    
+}
+
+
+.title-brand-db{
+    font-family: Tungsten-bold , sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+    
+}
+
+.title-brand-pp{
+    font-family: Belizio , sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    
+}
+
+.title-brand-dd{
+    font-family: FrankfurterDmed , sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
     
 }
 
@@ -205,9 +296,10 @@ h2 {
 
 .arrow-down{
     left: 0px;
-    top: 88%;
+    top: 94%;
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 
 .arrow-down-ngr{
     left: 0px;
@@ -230,13 +322,51 @@ h2 {
 }
 
 .icon-down{
-    width: 50px;
+    width: 30px;
+}
+
+.icon-rotate{
+    transform: rotate(180deg);
+}
+
+.icon-down-rotate{
+    left: 0px;
+    top: 94%;
+  
+    animation: scrollUp 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes scrollUp {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
 }
 
 
 .icon-scroll{
     width: 30px;
     
+}
+
+.box-logo-intercorp{
+    width: 135px;
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.box-logo-intercorp img{
+    width: 135px;
 }
 
 .container-logo-fix{
@@ -286,3 +416,26 @@ h2 {
 .hide{
     display: none;
 }
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+    filter:opacity(60%);
+}
+
+.number-ngr{
+    font-size: 150px;
+    transition: all 0.5s ease-in;
+}
+
