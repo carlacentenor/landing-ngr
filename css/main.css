@@ -13,11 +13,13 @@
     font-family: "din1451";
     src: url("../assets/fonts/DIN1451StdEngschrift.ttf");
 }
+
 /* NGR */
 @font-face {
     font-family: "omnes";
     src: url("../assets/fonts/Omnes_Regular.ttf");
 }
+
 @font-face {
     font-family: "omnes-semibold";
     src: url("../assets/fonts/omnes-semibold-webfont.ttf");
@@ -28,6 +30,7 @@
     font-family: "italian-bold";
     src: url("../assets/fonts/ItalianPlateNo2-Bold.otf");
 }
+
 @font-face {
     font-family: "italian";
     src: url("../assets/fonts/ItalianPlateNo2-Regular.otf");
@@ -79,6 +82,19 @@
     src: url("../assets/fonts/FrankfurterDMed.ttf");
 }
 
+
+@font-face {
+    font-family: 'icons-ngr';
+    src: url('./font/icons-ngr.eot?96623913');
+    src: url('./font/icons-ngr.eot?96623913#iefix') format('embedded-opentype'),
+        url('./font/icons-ngr.woff?96623913') format('woff'),
+        url('./font/icons-ngr.ttf?96623913') format('truetype'),
+        url('./font/icons-ngr.svg?96623913#icons-ngr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -90,14 +106,15 @@ h2 {
 
 }
 
-a{
+a {
     text-decoration: none;
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
@@ -105,7 +122,7 @@ a{
     margin-bottom: 1.5em;
 }
 
-.mb-2{
+.mb-2 {
     margin-bottom: 2em;
 }
 
@@ -118,7 +135,7 @@ a{
     color: white;
 }
 
-.text-gray{
+.text-gray {
     color: #92847E;
 }
 
@@ -143,87 +160,88 @@ a{
     font-family: din1451, sans-serif;
 }
 
-.text-content-ngr{
-    font-family: omnes-semibold , sans-serif;
+.text-content-ngr {
+    font-family: omnes-semibold, sans-serif;
     font-size: 24px;
-    
+
 }
 
-.text-content-counter{
-    font-family: omnes-semibold , sans-serif;
+.text-content-counter {
+    font-family: omnes-semibold, sans-serif;
     font-size: 36px;
-    
+
 }
 
-.phrases-star{
-    color :#F08D24;
+.phrases-star {
+    color: #F08D24;
     font-weight: bold;
 }
 
-.phares-star-2{
-    color :#F08D24;
+.phares-star-2 {
+    color: #F08D24;
     font-weight: bold;
 }
-.text-content-pj{
-    font-family: italian , sans-serif;
+
+.text-content-pj {
+    font-family: italian, sans-serif;
     font-size: 22px;
-    
+
 }
 
-.text-content-cw{
-    font-family: helveticaneue,sans-serif;
+.text-content-cw {
+    font-family: helveticaneue, sans-serif;
     font-size: 20px;
 }
 
-.text-content-db{
-    font-family: Archer,sans-serif;
+.text-content-db {
+    font-family: Archer, sans-serif;
     font-size: 20px;
 }
 
-.text-content-pp{
-    font-family: Metro,sans-serif;
+.text-content-pp {
+    font-family: Metro, sans-serif;
     font-size: 20px;
 }
 
-.text-content-dd{
-    font-family: FrankfurterDmed,sans-serif;
+.text-content-dd {
+    font-family: FrankfurterDmed, sans-serif;
     font-size: 24px;
 }
 
 
-.title-brand-cw{
+.title-brand-cw {
     font-family: frankfurter;
     text-transform: uppercase;
     font-size: 45px;
 }
 
-.title-brand-pj{
-    font-family: italian-bold , sans-serif;
+.title-brand-pj {
+    font-family: italian-bold, sans-serif;
     text-transform: uppercase;
     font-size: 50px;
-    
+
 }
 
 
-.title-brand-db{
-    font-family: Tungsten-bold , sans-serif;
+.title-brand-db {
+    font-family: Tungsten-bold, sans-serif;
     text-transform: uppercase;
     font-size: 45px;
-    
+
 }
 
-.title-brand-pp{
-    font-family: Belizio , sans-serif;
+.title-brand-pp {
+    font-family: Belizio, sans-serif;
     text-transform: uppercase;
     font-size: 24px;
-    
+
 }
 
-.title-brand-dd{
-    font-family: FrankfurterDmed , sans-serif;
+.title-brand-dd {
+    font-family: FrankfurterDmed, sans-serif;
     text-transform: uppercase;
     font-size: 34px;
-    
+
 }
 
 .logo-bb {
@@ -234,7 +252,7 @@ a{
     width: 185px;
 }
 
-.logo-cw{
+.logo-cw {
     width: 180px;
 }
 
@@ -252,31 +270,54 @@ a{
     height: 40px;
 }
 
+.icon-font {
+    font-size: 35px;
+  
+    position: relative;
+    right: 2px;
+}
+
+
+.icon-font-fac {
+    font-size: 40px;
+   
+    position: relative;
+    left: 1px;
+}
 
 .circle-bb {
     background-color: white;
 }
 
-.circle-db{
+.circle-db {
     background-color: #CF112D;
 }
 
-.circle-ngr{
+.circle-ngr {
     background-color: #F08D24;
+color: white;
+transition: .5s;
+}
+
+.circle-ngr:hover {
+    box-sizing: border-box;
+    background-color: white;
+    color: #F08D24;
+    border: 2px solid #F08D24;
 }
 
 .container-brand {
-    
+
     display: grid;
-    grid-template-columns: minmax(auto,450px);
+    grid-template-columns: minmax(auto, 450px);
     justify-content: center;
 }
 
-.gap{
+.gap {
     grid-gap: 3em;
 }
 
-.intercorp{
+.intercorp {
     width: 150px;
 }
 
@@ -286,7 +327,7 @@ a{
     margin-top: 5px;
 }
 
-.text-link-ngr{
+.text-link-ngr {
     font-family: omnes;
     font-weight: bold;
     font-size: 14px;
@@ -294,14 +335,14 @@ a{
 }
 
 
-.arrow-down{
+.arrow-down {
     left: 0px;
     top: 94%;
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 
-.arrow-down-ngr{
+.arrow-down-ngr {
     left: 0px;
     top: 86%;
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
@@ -312,27 +353,29 @@ a{
         opacity: 0;
         transform: translateX(-50%) translateY(-20px);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(10px);
     }
 }
 
-.icon-down{
+.icon-down {
     width: 30px;
 }
 
-.icon-rotate{
+.icon-rotate {
     transform: rotate(180deg);
 }
 
-.icon-down-rotate{
+.icon-down-rotate {
     left: 0px;
     top: 94%;
-  
+
     animation: scrollUp 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -341,9 +384,11 @@ a{
         opacity: 0;
         transform: translateX(-50%) translateY(10px);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(-20px);
@@ -351,12 +396,12 @@ a{
 }
 
 
-.icon-scroll{
+.icon-scroll {
     width: 30px;
-    
+
 }
 
-.box-logo-intercorp{
+.box-logo-intercorp {
     width: 135px;
     float: right;
     position: absolute;
@@ -365,25 +410,25 @@ a{
 
 }
 
-.box-logo-intercorp img{
+.box-logo-intercorp img {
     width: 135px;
 }
 
-.container-logo-fix{
+.container-logo-fix {
     width: 150px;
     height: 65px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
-    
+
 }
 
-.logo-ngr-fix{
+.logo-ngr-fix {
     width: 100px;
 }
 
 
-.fixed-container{
+.fixed-container {
     position: fixed;
     z-index: 99;
     left: 50%;
@@ -413,7 +458,7 @@ a{
 }
 
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -431,11 +476,10 @@ a{
     background-size: contain;
     object-fit: cover;
     z-index: 3;
-    filter:opacity(60%);
+    filter: opacity(60%);
 }
 
-.number-ngr{
+.number-ngr {
     font-size: 150px;
     transition: all 0.5s ease-in;
 }
-
