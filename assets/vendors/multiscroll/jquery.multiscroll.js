@@ -469,7 +469,7 @@
                 const show = document.querySelector('.count'),
                     number = Number(show.innerHTML) + 1;
 
-                let counter = 5900,
+                let counter = 5970,
                     delay = 1,
                     x = number / 100,
                     y = 0;
