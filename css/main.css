@@ -272,7 +272,6 @@ a {
 
 .icon-font {
     font-size: 35px;
-  
     position: relative;
     right: 2px;
 }
@@ -280,23 +279,99 @@ a {
 
 .icon-font-fac {
     font-size: 40px;
-   
+    position: relative;
+    left: 1px;
+}
+
+.icon-font-home {
+    font-size: 40px;
     position: relative;
     left: 1px;
 }
 
 .circle-bb {
     background-color: white;
+    color:#193694 ;
+    transition: .5s;
+}
+
+.circle-bb:hover {
+    box-sizing: border-box;
+    background-color: #193694;
+    color:white ;
+    border: 2px solid white ;
+}
+
+.circle-pj {
+    background-color: white;
+    color:#1B6B50 ;
+    transition: .5s;
+}
+
+.circle-pj:hover {
+    box-sizing: border-box;
+    background-color: #1B6B50;
+    color:white ;
+    border: 2px solid white ;
+}
+
+.circle-cw{
+    background-color: white;
+    color:#ED1F20 ;
+    transition: .5s;
+}
+
+.circle-cw:hover {
+    box-sizing: border-box;
+    background-color: #ED1F20;
+    color:white ;
+    border: 2px solid white ;
 }
 
 .circle-db {
     background-color: #CF112D;
+    color:white ;
+    transition: .5s;
+
+}
+
+.circle-db:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    color:#CF112D ;
+    border: 2px solid #CF112D ;
+}
+
+.circle-pp{
+    background-color: white;
+    color:#FB6619 ;
+    transition: .5s;
+}
+
+.circle-pp:hover {
+    box-sizing: border-box;
+    background-color: #FB6619;
+    color:white ;
+    border: 2px solid white ;
+}
+
+.circle-dd{
+    background-color: white;
+    color:#603D1A ;
+    transition: .5s;
+}
+
+.circle-dd:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    color:white ;
+    border: 2px solid white ;
 }
 
 .circle-ngr {
     background-color: #F08D24;
-color: white;
-transition: .5s;
+    color: white;
+    transition: .5s;
 }
 
 .circle-ngr:hover {

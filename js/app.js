@@ -1,9 +1,10 @@
 
         $(document).ready(function () {
             $('#myContainer').multiscroll({
-                navigation: false,
+                // navigation: true,
                 loopBottom: false,
-                loopTop: false
+                loopTop: false,
+              
             });
             
 
