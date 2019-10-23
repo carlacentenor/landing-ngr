@@ -124,7 +124,7 @@ a {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-left:1em ;
+    padding-left: 1em;
 }
 
 .flex-end {
@@ -133,7 +133,7 @@ a {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-right:1.5em ;
+    padding-right: 1.5em;
 }
 
 .mb-1 {
@@ -142,6 +142,10 @@ a {
 
 .mb-2 {
     margin-bottom: 2em;
+}
+
+.mt-1{
+    margin-top: 1em;
 }
 
 .pl-1 {
@@ -629,33 +633,81 @@ a {
         left: 50%;
     }
 
-    .container-employee{
+    .container-employee {
         height: 100vh;
         padding: 0 1em;
     }
+
     .number-ngr {
         font-size: 90px;
-    
+
     }
 
-    .bg-bb-mobile{
+    .bg-bb-mobile {
         height: 100vh;
         background-image: url(../assets/images/bbmobile.jpg);
         background-size: cover;
     }
 
-    .content-brand{
-        padding-top: 5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    .bg-pj-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/pjmobile.jpg);
+        background-size: cover;
     }
-    .logo-bb{
+
+    .bg-cw-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/cwmobile.jpg);
+        background-size: cover;
+    }
+
+    .bg-db-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/dbmobile.jpg);
+        background-size: cover;
+    }
+
+    .bg-pp-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/ppmobile.jpg);
+        background-size: cover;
+    }
+
+    .bg-dd-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/ddmobile.png);
+        background-size: cover;
+    }
+
+    .bg-wh-mobile {
+        height: 100vh;
+        background-image: url(../assets/images/whmobile.jpg);
+        background-size: cover;
+    }
+
+
+    .content-brand {
+        padding-top: 5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .logo-bb {
         width: 200px;
     }
-    .title-bb{
+
+    .logo-pj{
+        width: 180px;
+    }
+
+    .title-bb {
         font-size: 30px;
     }
-    .text-content-bb{
+    .title-brand-pj{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .text-content-bb {
         font-size: 20px;
     }
 }
@@ -667,7 +719,8 @@ a {
     .hide-mobile {
         display: block;
     }
-    .hide-desktop{
+
+    .hide-desktop {
         display: none;
     }
 }
