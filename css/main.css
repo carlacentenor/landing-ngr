@@ -144,7 +144,7 @@ a {
     margin-bottom: 2em;
 }
 
-.mt-1{
+.mt-1 {
     margin-top: 1em;
 }
 
@@ -590,6 +590,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    
     .hide-mobile {
 
         display: none;
@@ -636,6 +637,7 @@ a {
     .container-employee {
         height: 100vh;
         padding: 0 1em;
+        box-sizing: border-box;
     }
 
     .number-ngr {
@@ -696,38 +698,44 @@ a {
         width: 200px;
     }
 
-    .logo-pj{
+    .logo-pj {
         width: 180px;
     }
 
     .title-bb {
         font-size: 30px;
     }
-    .title-brand-pj{
+
+    .title-brand-pj {
         font-size: 35px;
         margin-bottom: 10px;
     }
+
     .text-content-bb {
         font-size: 20px;
     }
 
-    .title-brand-dd{
-font-size: 25px;
-    }
-    .text-content-dd{
-        font-size: 18px;
-    }
-    .logo-pp{
-        width: 150px;
-    }
-    .title-brand-pp{
-        font-size: 20px;
-    }
-    .text-content-pp{
-font-size: 16px;
+    .title-brand-dd {
+        font-size: 25px;
     }
 
-    .title-brand-db{
+    .text-content-dd {
+        font-size: 18px;
+    }
+
+    .logo-pp {
+        width: 150px;
+    }
+
+    .title-brand-pp {
+        font-size: 20px;
+    }
+
+    .text-content-pp {
+        font-size: 16px;
+    }
+
+    .title-brand-db {
         font-size: 36px;
     }
 }

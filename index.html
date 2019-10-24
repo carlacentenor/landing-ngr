@@ -8,11 +8,13 @@
 
     <link rel="stylesheet" type="text/css" href="assets/vendors/multiscroll/jquery.multiscroll.css" />
     <link rel="stylesheet" href="assets/icons/icons-ngr/css/icons-ngr.css">
+    <link rel="stylesheet" href="assets/vendors/fullpage/app/assets/stylesheet/full-page-scroll.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="assets/vendors/multiscroll/vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="assets/vendors/multiscroll/jquery.multiscroll.js"></script>
-    <script src="js/app.js"></script>
+
+
     <title>NGR</title>
 
 </head>
@@ -521,15 +523,16 @@
 
 
     <!--**************************************** Mobile*********************************************** -->
-    <div class="container-mobile hide-desktop">
-        <div class="fixed-container">
-            <a href="index.html">
-                <div class="container-logo-fix flex-center">
-                    <img class="logo-ngr-fix" src="assets/images/logo-ngr-xl.png" alt="logo-ngr">
-                </div>
-            </a>
-        </div>
-        <section class="relative">
+
+    <div class="fixed-container hide-desktop">
+        <a href="index.html">
+            <div class="container-logo-fix flex-center">
+                <img class="logo-ngr-fix" src="assets/images/logo-ngr-xl.png" alt="logo-ngr">
+            </div>
+        </a>
+    </div>
+    <div id="main" class="scroll-container hide-desktop">
+        <section class="section1 relative">
             <div class="absolute phrase-ngr">
                 <p class="text-white  text-content-ngr text-center">Entregamos <span class="phrases-star">CARIÑO</span>
                     y <span class="phrases-star">ENERGÍA</span> a nuestros clientes y
@@ -580,22 +583,20 @@
 
             </div>
         </section>
-        <!-- Colaboradores -->
-        <section class="container-employee flex-center">
+        <section class="section2 container-employee flex-center">
             <div class="container-brand gap">
 
 
                 <p class="text-gray  text-content-counter text-center">Somos una <span
                         class="phrases-star">familia</span> de más de
                 </p>
-                <p class=" text-gray  text-content-ngr text-center number-ngr count">6000</p>
+                <p class=" text-gray  text-content-ngr text-center number-ngr countjs">6000</p>
                 <p class="text-gray text-content-counter text-center">personas que entregamos <span
                         class="phrases-star">CARIÑO</span> y <span class="phares-star-2">ENERGÍA</span></p>
 
             </div>
         </section>
-        <!-- Bembos Mobile -->
-        <section class="bg-bb-mobile relative">
+        <section class="section3 bg-bb-mobile relative">
             <div class="content-brand">
                 <div class="text-center mb-1">
                     <a href="https://www.bembos.com.pe/" target="_blank">
@@ -646,10 +647,8 @@
                 </div>
 
             </div>
-
         </section>
-        <!-- Mobile PJ -->
-        <section class="bg-pj-mobile relative">
+        <section class="section4 bg-pj-mobile relative">
             <div class="content-brand ">
                 <div class="text-center mb-1 mt-1">
                     <a href="https://papajohns.com.pe/" target="_blank">
@@ -661,8 +660,8 @@
                 <h2 class="title-brand-pj text-white ">Mejores ingredientes, mejor pizza</h2>
                 <p class="text-white text-content text-content-pj">Con más de 30 años y 5 mil locales en 45 países,
                     somos una de las cadenas más grandes del mundo.</p>
-                </div>
-                <div class="absolute pos-icon">
+            </div>
+            <div class="absolute pos-icon">
                 <div class="grid-links">
                     <div>
                         <a href="https://papajohns.com.pe/" target="_blank">
@@ -700,8 +699,7 @@
                 </div>
             </div>
         </section>
-        <!-- Mobile CW -->
-        <section class="bg-cw-mobile relative">
+        <section class="section5 bg-cw-mobile relative">
             <div class="content-brand">
                 <div class="text-center mb-1">
                     <a href="http://www.chinawok.com.pe/" target="_blank">
@@ -715,9 +713,9 @@
                 <h2 class="title-brand-cw text-white title-bb">El generoso sabor del chifa peruano </h2>
                 <p class="text-white text-content text-content-cw">La generosidad, la innovación y la creatividad
                     llevaron a crear un chifa delicioso y listo para compartir en 1999.</p>
-                </div>
-                <div class="absolute pos-icon">
-                    <div class="grid-links">
+            </div>
+            <div class="absolute pos-icon">
+                <div class="grid-links">
                     <div>
                         <a href="http://www.chinawok.com.pe/" target="_blank">
                             <div class="flex-center">
@@ -751,12 +749,10 @@
                             <p class="text-white text-link text-center">Trabaja con <br>nosotros</p>
                         </a>
                     </div>
-                    </div>
                 </div>
-            
+            </div>
         </section>
-        <!-- Mobile DB -->
-        <section class="bg-db-mobile relative">
+        <section class="section6 bg-db-mobile relative">
             <div class="content-brand ">
                 <div class="text-center mb-1">
                     <a href="http://www.donbelisario.com.pe/" target="_blank">
@@ -771,9 +767,9 @@
                 </h2>
                 <p class="text-white text-content text-content-db">En 2013 comenzamos nuestra aventura apostando por
                     un concepto distinto de Pollos a la brasa y es así, como conquistamos a todos los peruanos.</p>
-                </div>
-                <div class="absolute pos-icon">
-                    <div class="grid-links">
+            </div>
+            <div class="absolute pos-icon">
+                <div class="grid-links">
                     <div>
                         <a href="http://www.donbelisario.com.pe/" target="_blank">
                             <div class="flex-center">
@@ -809,10 +805,9 @@
                     </div>
                 </div>
             </div>
-       
         </section>
-        <!-- Mobile PP -->
-        <section class="bg-pp-mobile relative">
+        <section class="section7 bg-pp-mobile relative">
+
             <div class="content-brand">
                 <div class="text-center mb-1">
                     <a href="https://www.popeyes.com.pe/" target="_blank">
@@ -829,7 +824,7 @@
                     2012 para conquistar el paladar de los peruanos con el mejor pollo frito estilo cajún
                     .</p>
             </div>
-                    <div class="absolute pos-icon">
+            <div class="absolute pos-icon">
                 <div class="grid-links">
                     <div>
                         <a href="https://www.popeyes.com.pe/" target="_blank">
@@ -868,10 +863,7 @@
                 </div>
             </div>
         </section>
-        
-        
-        <!-- Mobile DD -->
-        <section class="bg-dd-mobile relative">
+        <section class="section8 bg-dd-mobile relative">
             <div class="content-brand">
                 <div class="text-center mb-1">
                     <a href="http://www.dunkin.pe/" target="_blank">
@@ -886,7 +878,7 @@
                     y energizar con las mejores donuts y café al instante
                     .</p>
             </div>
-                    <div class="absolute pos-icon">
+            <div class="absolute pos-icon">
                 <div class="grid-links">
                     <div>
                         <a href="http://www.dunkin.pe/" target="_blank">
@@ -924,8 +916,7 @@
                 </div>
             </div>
         </section>
-        <!-- Mobile WH -->
-        <section class="bg-wh-mobile relative">
+        <section class="section9 bg-wh-mobile relative">
             <div class="content-brand">
                 <div class="text-center mb-1">
                     <img class="logo-bb" src="assets/images/wang.png" alt="logo-wh
@@ -943,7 +934,8 @@
         </section>
     </div>
 
-
+    <script src="assets/vendors/fullpage/app/assets/javascript/full-page-scroll.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
