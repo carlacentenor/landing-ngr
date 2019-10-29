@@ -299,7 +299,7 @@ a {
 }
 
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
     0% {
         transform: scale(0.9);
 
@@ -614,6 +614,8 @@ a {
     transition: all 0.5s ease-in;
 }
 
+
+
 @media screen and (max-width: 1024px) {
 
     .hide-mobile {
@@ -763,15 +765,82 @@ a {
     .title-brand-db {
         font-size: 36px;
     }
+
     .circle-ngr:hover {
         box-sizing: border-box;
         background-color: transparent;
         color: white;
         border: 2px solid white;
     }
-    
+
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .bg-bb-mobile,
+    .bg-pj-mobile,
+    .bg-cw-mobile,
+    .bg-db-mobile,
+    .bg-dd-mobile,
+    .bg-pp-mobile,
+    .bg-wh-mobile {
+        background-position-y: 65%;
+    }
+
+    .logo-bb {
+        width: 300px;
+    }
+
+    .title-bb,
+    .title-brand-db {
+        font-size: 65px;
+    }
+
+    .text-content-bb {
+        font-size: 40px;
+    }
+
+    .logo-pj {
+        width: 250px;
+    }
+
+    .title-brand-pj {
+        font-size: 65px;
+
+    }
+
+    .text-content-pj {
+        font-size: 35px;
+    }
+
+    .text-content-cw,
+    .text-content-db {
+        font-size: 35px;
+    }
+
+    .logo-cw {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    .logo-pp {
+        width: 250px;
+    }
+
+    .title-brand-pp,
+    .text-content-pp,
+    .text-content-dd {
+        font-size: 35px;
+    }
+
+    .title-brand-dd {
+        font-size: 55px;
+    }
+
+    .text-content-ngr {
+        font-size: 60px;
+    }
+}
 
 
 
