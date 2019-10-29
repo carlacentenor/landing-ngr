@@ -293,7 +293,32 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    animation: pulse 1.5s infinite;
+
 }
+
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(0.9);
+
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0)
+    }
+}
+
+
+
 
 .icon-group {
     width: 40px;
@@ -590,7 +615,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     .hide-mobile {
 
         display: none;
@@ -738,6 +763,13 @@ a {
     .title-brand-db {
         font-size: 36px;
     }
+    .circle-ngr:hover {
+        box-sizing: border-box;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+    
 }
 
 
