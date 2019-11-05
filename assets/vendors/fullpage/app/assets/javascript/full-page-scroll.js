@@ -219,7 +219,7 @@
 
 			if (position == 100) {
 
-				// Counter
+				// Counter***********************************************************
 				const show = document.querySelector('.countjs'),
 					number = Number(show.innerHTML) + 1;
 
@@ -241,7 +241,8 @@
 					}
 				}
 			}
-			
+
+			// Agrandar y reducir logo en version mobile************************
 			const logoContainerMobile = document.querySelector('.fix-js');
 			const logoMobile = document.querySelector('.fix-logo-js');
 			if (position >= 200) {
@@ -254,7 +255,7 @@
 				logoMobile.classList.remove('logo-fix-mob');
 				console.log('holsaa')
 			}
-		
+// ************************************************************************************
 
 			for (var i = 0; i < this.ul.childNodes.length; i++) {
 				this.ul.childNodes[i].firstChild.className = this.updateClass(2, 'active', this.ul.childNodes[i].firstChild.className);
