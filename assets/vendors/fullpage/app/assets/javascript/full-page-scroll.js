@@ -222,7 +222,7 @@
 				// Counter
 				const show = document.querySelector('.countjs'),
 					number = Number(show.innerHTML) + 1;
-				console.log(show)
+
 				let counter = 5970,
 					delay = 1,
 					x = number / 100,
@@ -241,13 +241,20 @@
 					}
 				}
 			}
+			
+			const logoContainerMobile = document.querySelector('.fix-js');
+			const logoMobile = document.querySelector('.fix-logo-js');
+			if (position >= 200) {
 
-			if(position>300){
+				logoContainerMobile.classList.add('size-logo');
+				logoMobile.classList.add('logo-fix-mob');
 
+			} else {
+				logoContainerMobile.classList.remove('size-logo');
+				logoMobile.classList.remove('logo-fix-mob');
+				console.log('holsaa')
 			}
-			else{
-				
-			}
+		
 
 			for (var i = 0; i < this.ul.childNodes.length; i++) {
 				this.ul.childNodes[i].firstChild.className = this.updateClass(2, 'active', this.ul.childNodes[i].firstChild.className);
