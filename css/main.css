@@ -471,6 +471,16 @@ a {
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.arrow-down-brand{
+    right: 0px;
+    top: 1%;
+    animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.arrow-down-brand img{
+    width: 100px;
+}
+
 
 .arrow-down-ngr {
     left: 0px;
@@ -618,6 +628,11 @@ a {
 
 
 @media screen and (max-width: 1024px) {
+
+    .container-brand {
+        padding: 0 10px;
+    }
+
     .container-logo-fix-mob {
         width: 200px;
         height: 85px;
