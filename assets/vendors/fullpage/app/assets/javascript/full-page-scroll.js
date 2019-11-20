@@ -19,7 +19,7 @@
 		 * @type {Array}
 		 */
 		var sections = main.getElementsByTagName('section');
-		console.log(sections)
+		
 		/**
 		 * Full page scroll configurations
 		 * @type {Object}
@@ -253,7 +253,7 @@
 			} else {
 				logoContainerMobile.classList.remove('size-logo');
 				logoMobile.classList.remove('logo-fix-mob');
-				console.log('holsaa')
+				
 			}
 // ************************************************************************************
 
