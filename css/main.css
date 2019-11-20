@@ -646,6 +646,11 @@ a {
     filter: opacity(60%);
 }
 
+.section2{
+    background-color: white;
+    z-index: 4;
+}
+
 .contain-video{
      width: 100%; 
      height: 100vh;
