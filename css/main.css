@@ -647,10 +647,12 @@ a {
 }
 
 .contain-video{
-     width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.8);
+     width: 100%; 
+     height: 100vh;
+     background: rgba(0, 0, 0, 0.8);
 }
 #myVideo2 {
-    position: relative;
+    position: absolute;
     right: 0;
     bottom: 0;
     top: 0;
@@ -658,15 +660,13 @@ a {
     width: 100%;
     height: 100vh;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     object-fit: cover;
     z-index: 3;
     filter: opacity(60%);
 }
 
-.scroll-container section{
-height: 100vh;
-}
+
 
 .number-ngr {
     font-size: 150px;
