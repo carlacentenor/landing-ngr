@@ -646,6 +646,26 @@ a {
     filter: opacity(60%);
 }
 
+.contain-video{
+    width: 100%; 
+    height: 100vh; 
+    background: rgba(0, 0, 0, 0.8);
+}
+#myVideo2 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+    filter: opacity(60%);
+}
+
 .scroll-container section{
 height: 100vh;
 }
