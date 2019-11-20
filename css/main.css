@@ -668,7 +668,7 @@ a {
     background-size: cover;
     object-fit: cover;
     z-index: 3;
-    filter: opacity(60%);
+    filter: opacity(50%);
 }
 
 
