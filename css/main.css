@@ -698,16 +698,34 @@ a {
         filter: opacity(35%);
     }
 
+    .size-certification {
+        width: 18vw;
+    }
+
+    .pos-certification {
+        top: 0;
+        left: 78%;
+        z-index: 9;
+
+    }
+
+    .logo-ngr-mob {
+        z-index: 8;
+        top: 22.5%;
+        left: 22.5vw;
+
+    }
+
     .phrase-ngr {
         z-index: 8;
         padding: 0 1em;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
 
     }
 
     .text-content-ngr {
-        font-size: 36px;
+        font-size: 8vw;
     }
 
     .pos-icon {
@@ -793,6 +811,10 @@ a {
 
     .logo-bb {
         width: 200px;
+    }
+
+    .logo-ngr-mob-img {
+        width: 55vw;
     }
 
     .logo-pj {
@@ -931,7 +953,7 @@ a {
 
 @media screen and (max-height: 568px) {
     .text-content-ngr {
-        font-size: 25px
+        font-size: 7.5vw
     }
 
     .text-content-counter {
