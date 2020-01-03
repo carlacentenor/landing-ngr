@@ -463,7 +463,7 @@
                 $('.hide').fadeOut('slow');
             }
 
-            console.log(topPos);
+            // console.log(topPos);
             if (topPos.left == 625) {
                 // Counter
                 const show = document.querySelector('.count'),
