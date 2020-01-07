@@ -218,7 +218,7 @@
 			this.defaults.container.style.transition = 'all ' + animateTime + 's ' + animateFunction;
 
 			if (position == 100) {
-
+				$('.fixed-container-mob').fadeIn('slow');
 				// Counter***********************************************************
 				const show = document.querySelector('.countjs'),
 					number = Number(show.innerHTML) + 1;
@@ -240,6 +240,9 @@
 						}, delay)
 					}
 				}
+			}
+			if(position<100){
+				$('.hide').fadeOut('slow');
 			}
 
 			// Agrandar y reducir logo en version mobile************************
