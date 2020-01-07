@@ -989,3 +989,132 @@ a {
         font-size: 18px;
     }
 }
+
+
+/* Styles Mobile Horizontal */
+
+
+@media (max-height: 420px) {
+    .text-content-ngr {
+        font-size: 6vh;
+    }
+
+    .logo-ngr-mob-img {
+        width: 30vw;
+    }
+
+    .size-certification {
+        width: 15vh;
+    }
+
+    .logo-ngr-mob {
+
+        left: 38vw;
+    }
+
+    .circle-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-font,
+    .icon-font-fac {
+        font-size: 6vh;
+    }
+
+    .number-ngr {
+        font-size: 8vh;
+    }
+
+    .gap-mobile {
+        grid-gap: 1em;
+    }
+
+    .text-content-counter {
+        font-size: 7vh;
+    }
+
+    .text-link-ngr {
+        font-size: 10px;
+    }
+
+    /* Bemnbos */
+    .logo-bb {
+        width: 35vh;
+    }
+
+    .title-bb {
+        font-size: 6vh;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .text-content-bb {
+        font-size: 4.5vh;
+        text-align: center;
+    }
+
+    /* Papa Johns */
+
+    .title-brand-pj {
+        font-size: 6.5vh;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .text-content-pj {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .logo-pj {
+        width: 30vh;
+    }
+
+    /* Chinawok */
+    .logo-cw {
+        width: 25vh;
+    }
+
+    .text-content-cw {
+        font-size: 3.8vh;
+        text-align: center;
+    }
+
+    /* DOn Belisario */
+
+    .title-brand-db {
+        font-size: 6vh;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .text-content-db {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    /* Popeyes */
+    .logo-pp {
+        width: 28vh;
+    }
+
+    .title-brand-pp {
+        font-size: 3.2vh;
+        margin-bottom: 5px;
+    }
+
+    .text-content-pp {
+        font-size: 4vh;
+    }
+
+    /* DD */
+    .text-content-dd {
+        font-size: 5vh;
+    }
+
+    .title-brand-dd {
+        font-size: 5vh;
+        margin-bottom: 5px;
+    }
+}
