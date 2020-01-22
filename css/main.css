@@ -289,7 +289,7 @@ a {
 }
 
 .logo-bb {
-    width: 240px;
+    width: 250px;
 }
 
 .logo-pp {
@@ -308,7 +308,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
-    animation: pulse 1.5s infinite;
+    /* animation: pulse 3s infinite; */
 
 }
 
@@ -507,7 +507,7 @@ a {
 
 .arrow-down-ngr {
     left: 0px;
-    top: 86%;
+    top: 90%;
     animation: scrollDown 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
