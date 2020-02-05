@@ -152,6 +152,10 @@ a {
     margin-top: 2em;
 }
 
+.p-1 {
+    padding: 1em;
+}
+
 .pl-1 {
     padding-left: 1em;
 }
@@ -1112,5 +1116,99 @@ a {
     .title-brand-dd {
         font-size: 5vh;
         margin-bottom: 5px;
+    }
+}
+
+/* Sección Legal */
+
+.legal-box {
+    font-family: omnes, sans-serif;
+    color: #978b82;
+    line-height: 1.5;
+    justify-content: center;
+    padding: 0 1em 1em 1em;
+}
+
+.container-legal {
+
+    border: 1px solid #ced4da;
+}
+
+.box-limit {
+    box-sizing: border-box;
+}
+
+.title-table-legal {
+    background-color: rgb(243, 195, 0);
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.block-legal-grid {
+
+    border-bottom: 1px solid #ced4da;
+
+    align-items: center;
+}
+
+.colum-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ced4da;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.row-title {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    font-weight: bold;
+}
+
+.logo-ngr-legal {
+
+    width: 100px;
+
+}
+
+.link-long {
+    overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 768px) {
+
+    .logo-ngr-legal {
+
+        width: 140px;
+
+    }
+
+    .legal-box {
+        font-family: omnes, sans-serif;
+        color: #978b82;
+        display: grid;
+        grid-template-columns: minmax(auto, 928px);
+        line-height: 1.5;
+        display: grid;
+        justify-content: center;
+        padding: 0 1em 1em 1em;
+
+    }
+
+    .block-legal-grid {
+        display: grid;
+        border-bottom: 1px solid #ced4da;
+        grid-template-columns: .5fr 2fr;
+        align-items: center;
+    }
+
+    .title-table-legal {
+        font-size: 1.5rem;
     }
 }
