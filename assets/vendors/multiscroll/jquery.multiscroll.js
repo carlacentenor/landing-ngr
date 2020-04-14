@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
-(function ($, window, document, Math, undefined) {
+(function($, window, document, Math, undefined) {
 
-    $.fn.multiscroll = function (options) {
+    $.fn.multiscroll = function(options) {
         var MS = $.fn.multiscroll;
 
         // Create some defaults, extending them with any options that were provided
@@ -89,7 +89,7 @@
 
         //adding class names to each sections
         if (options.sectionSelector !== '.ms-section') {
-            $(options.sectionSelector).each(function () {
+            $(options.sectionSelector).each(function() {
                 $(this).addClass('ms-section');
             });
         }
@@ -125,7 +125,7 @@
         });
 
 
-        $('.ms-left .ms-section, .ms-right .ms-section').each(function () {
+        $('.ms-left .ms-section, .ms-right .ms-section').each(function() {
             var sectionIndex = $(this).index();
 
             if (options.paddingTop || options.paddingBottom) {
@@ -163,7 +163,7 @@
         //inverting the right panel
         $('.ms-right').html($('.ms-right').find('.ms-section').get().reverse());
 
-        $('.ms-left .ms-section, .ms-right .ms-section').each(function () {
+        $('.ms-left .ms-section, .ms-right .ms-section').each(function() {
             var sectionIndex = $(this).index();
 
             $(this).css({
@@ -175,7 +175,7 @@
                 //activating the navigation bullet
                 nav.find('li').eq(sectionIndex).find('a').addClass('active');
             }
-        }).promise().done(function () {
+        }).promise().done(function() {
 
             //if no active section is defined, the 1st one will be the default one
             if (!$('.ms-left .ms-section.active').length) {
@@ -195,7 +195,7 @@
             //setting the class for the body element
             setBodyClass();
 
-            $(window).on('load', function () {
+            $(window).on('load', function() {
                 scrollToAnchor();
             });
         });
@@ -222,12 +222,13 @@
 
 
         /**
-        * Sliding with arrow keys, both, vertical and horizontal
-        */
+         * Sliding with arrow keys, both, vertical and horizontal
+         */
         $(document).keydown(keydownHandler);
 
 
         var keydownId;
+
         function keydownHandler(e) {
             clearTimeout(keydownId);
 
@@ -243,7 +244,7 @@
                     e.preventDefault();
                 }
 
-                keydownId = setTimeout(function () {
+                keydownId = setTimeout(function() {
                     onkeydown(e);
                 }, 150);
             }
@@ -262,7 +263,7 @@
                     MS.moveSectionUp();
                     break;
 
-                //down
+                    //down
                 case 32: //spacebar
                     if (shiftPressed) {
                         MS.moveSectionUp();
@@ -273,12 +274,12 @@
                     MS.moveSectionDown();
                     break;
 
-                //Home
+                    //Home
                 case 36:
                     MS.moveTo(1);
                     break;
 
-                //End
+                    //End
                 case 35:
                     MS.moveTo($('.ms-left .ms-section').length);
                     break;
@@ -291,7 +292,7 @@
         /**
          * Disabling any action when pressing of the mouse wheel (Chrome, IE, Opera, Safari)
          */
-        $(document).mousedown(function (e) {
+        $(document).mousedown(function(e) {
             if (e.button == 1) {
                 e.preventDefault();
                 return false;
@@ -313,7 +314,7 @@
         }
 
         function navMouseLeaveHandler() {
-            $(this).find('.multiscroll-tooltip').fadeOut(200, function () {
+            $(this).find('.multiscroll-tooltip').fadeOut(200, function() {
                 $(this).remove();
             });
         }
@@ -326,11 +327,11 @@
 
 
         if (options.normalScrollElements) {
-            $(document).on('mouseenter', options.normalScrollElements, function () {
+            $(document).on('mouseenter', options.normalScrollElements, function() {
                 MS.setMouseWheelScrolling(false);
             });
 
-            $(document).on('mouseleave', options.normalScrollElements, function () {
+            $(document).on('mouseleave', options.normalScrollElements, function() {
                 MS.setMouseWheelScrolling(true);
             });
         }
@@ -365,7 +366,7 @@
                 //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
                 clearTimeout(resizeId);
 
-                resizeId = setTimeout(function () {
+                resizeId = setTimeout(function() {
                     reBuild(true);
                 }, 350);
             }
@@ -376,7 +377,7 @@
          */
         function reBuild(resizing) {
             windowHeight = $(window).height();
-            $('.ms-tableCell').each(function () {
+            $('.ms-tableCell').each(function() {
                 $(this).css({ height: getTableHeight($(this).parent()) });
             });
 
@@ -399,7 +400,7 @@
             }
         }
 
-        MS.moveSectionUp = function () {
+        MS.moveSectionUp = function() {
             var prev = $('.ms-left .ms-section.active').prev('.ms-section');
 
             if (!prev.length && options.loopTop) {
@@ -411,7 +412,7 @@
             }
         };
 
-        MS.moveSectionDown = function () {
+        MS.moveSectionDown = function() {
             var next = $('.ms-left .ms-section.active').next('.ms-section');
 
             if (!next.length && options.loopBottom) {
@@ -423,7 +424,7 @@
             }
         };
 
-        MS.moveTo = function (section) {
+        MS.moveTo = function(section) {
             var destiny = '';
 
             if (isNaN(section)) {
@@ -458,13 +459,12 @@
             if (topPos.left > 0) {
 
                 $('.fixed-container').fadeIn('slow');
-            }
-            else {
+            } else {
                 $('.hide').fadeOut('slow');
             }
-
+            // Count people
             // console.log(topPos);
-            if (topPos.left == 625) {
+            if (topPos.left == 625 || (topPos.left > 818 && topPos.left < 819)) {
                 // Counter
                 const show = document.querySelector('.count'),
                     number = Number(show.innerHTML) + 1;
@@ -482,7 +482,7 @@
                     show.innerHTML = counter.toString();
                     counter++;
                     if (counter < number) {
-                        setTimeout(function () {
+                        setTimeout(function() {
                             counter_js();
                         }, delay)
                     }
@@ -505,11 +505,11 @@
                 transformContainer($('.ms-left'), translate3dLeft, true);
                 transformContainer($('.ms-right'), translate3dRight, true);
 
-                setTimeout(function () {
+                setTimeout(function() {
                     //callback (afterLoad)
                     $.isFunction(options.afterLoad) && options.afterLoad.call(this, anchorLink, (leftDestinationIndex + 1));
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         isMoving = false;
                     }, scrollDelay);
                 }, options.scrollingSpeed);
@@ -519,10 +519,10 @@
 
                 $('.ms-left').animate({
                     'top': -topPos['left']
-                }, options.scrollingSpeed, options.easing, function () {
+                }, options.scrollingSpeed, options.easing, function() {
                     $.isFunction(options.afterLoad) && options.afterLoad.call(this, anchorLink, (leftDestinationIndex + 1));
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         isMoving = false;
                     }, scrollDelay);
                 });
@@ -540,9 +540,9 @@
         }
 
         /**
-        * Removes the auto scrolling action fired by the mouse wheel and tackpad.
-        * After this function is called, the mousewheel and trackpad movements won't scroll through sections.
-        */
+         * Removes the auto scrolling action fired by the mouse wheel and tackpad.
+         * After this function is called, the mousewheel and trackpad movements won't scroll through sections.
+         */
         function removeMouseWheelHandler() {
             if (document.addEventListener) {
                 document.removeEventListener('mousewheel', MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
@@ -553,9 +553,9 @@
         }
 
         /**
-        * Adds the auto scrolling action for the mouse wheel and tackpad.
-        * After this function is called, the mousewheel and trackpad movements will scroll through sections
-        */
+         * Adds the auto scrolling action for the mouse wheel and tackpad.
+         * After this function is called, the mousewheel and trackpad movements will scroll through sections
+         */
         function addMouseWheelHandler() {
             if (document.addEventListener) {
                 document.addEventListener("mousewheel", MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
@@ -595,8 +595,8 @@
         }
 
         /**
-        * Adds a css3 transform property to the container class with or without animation depending on the animated param.
-        */
+         * Adds a css3 transform property to the container class with or without animation depending on the animated param.
+         */
         function transformContainer(container, translate3d, animated) {
             container.toggleClass('ms-easing', animated);
 
@@ -605,8 +605,8 @@
 
 
         /**
-        * Returns the transform styles for all browsers
-        */
+         * Returns the transform styles for all browsers
+         */
         function getTransforms(translate3d) {
             return {
                 '-webkit-transform': translate3d,
@@ -641,9 +641,9 @@
         }
 
         /**
-        * Retuns `up` or `down` depending on the scrolling movement to reach its destination
-        * from the current section.
-        */
+         * Retuns `up` or `down` depending on the scrolling movement to reach its destination
+         * from the current section.
+         */
         function getYmovement(destiny) {
             var fromIndex = $('.ms-left .ms-section.active').index();
             var toIndex = destiny.index();
@@ -656,8 +656,8 @@
 
 
         /**
-        * Sets the URL hash for a section with slides
-        */
+         * Sets the URL hash for a section with slides
+         */
         function setURLHash(anchorLink) {
             if (options.anchors.length) {
                 location.hash = anchorLink;
@@ -667,8 +667,8 @@
         }
 
         /**
-       * Sets a class for the body of the page depending on the active section / slide
-       */
+         * Sets a class for the body of the page depending on the active section / slide
+         */
         function setBodyClass() {
             var section = $('.ms-left .ms-section.active');
             var sectionAnchor = section.data('anchor');
@@ -693,10 +693,10 @@
 
 
         /**
-        * Checks for translate3d support
-        * @return boolean
-        * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
-        */
+         * Checks for translate3d support
+         * @return boolean
+         * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
+         */
         function support3d() {
             var el = document.createElement('p'),
                 has3d,
@@ -724,15 +724,15 @@
         }
 
         /**
-        * Wraps an element in order to center it vertically by using a class style.
-        */
+         * Wraps an element in order to center it vertically by using a class style.
+         */
         function addTableClass(element) {
             element.addClass('ms-table').wrapInner('<div class="ms-tableCell" style="height: ' + getTableHeight(element) + 'px" />');
         }
 
         /**
-        * Gets the height of the section after removing the paddings.
-        */
+         * Gets the height of the section after removing the paddings.
+         */
         function getTableHeight(section) {
             var sectionHeight = windowHeight;
 
@@ -746,29 +746,29 @@
 
 
         /**
-        * Scrolls the page to the existent anchor in the URL
-        */
+         * Scrolls the page to the existent anchor in the URL
+         */
         function scrollToAnchor() {
             //getting the anchor link in the URL and deleting the `#`
             var sectionAnchor = window.location.hash.replace('#', '');
             var section = $('.ms-left .ms-section[data-anchor="' + sectionAnchor + '"]');
 
-            if (sectionAnchor.length) {  //if theres any #
+            if (sectionAnchor.length) { //if theres any #
                 scrollPage(section);
             }
         }
 
         /**
-        * Adds or remove the possiblity of scrolling through sections by using the keyboard arrow keys
-        */
-        MS.setKeyboardScrolling = function (value) {
+         * Adds or remove the possiblity of scrolling through sections by using the keyboard arrow keys
+         */
+        MS.setKeyboardScrolling = function(value) {
             options.keyboardScrolling = value;
         };
 
         /**
-        * Adds or remove the possiblity of scrolling through sections by using the mouse wheel or the trackpad.
-        */
-        MS.setMouseWheelScrolling = function (value) {
+         * Adds or remove the possiblity of scrolling through sections by using the mouse wheel or the trackpad.
+         */
+        MS.setMouseWheelScrolling = function(value) {
             if (value) {
                 addMouseWheelHandler();
             } else {
@@ -777,9 +777,9 @@
         };
 
         /**
-        * Defines the scrolling speed
-        */
-        MS.setScrollingSpeed = function (value) {
+         * Defines the scrolling speed
+         */
+        MS.setScrollingSpeed = function(value) {
             options.scrollingSpeed = value;
         };
 
@@ -825,9 +825,9 @@
         }
 
         /**
-        * As IE >= 10 fires both touch and mouse events when using a mouse in a touchscreen
-        * this way we make sure that is really a touch event what IE is detecting.
-        */
+         * As IE >= 10 fires both touch and mouse events when using a mouse in a touchscreen
+         * this way we make sure that is really a touch event what IE is detecting.
+         */
         function isReallyTouch(e) {
             //if is not IE   ||  IE is detecting `touch` or `pen`
             return typeof e.pointerType === 'undefined' || e.pointerType != 'mouse';
@@ -835,8 +835,8 @@
 
 
         /**
-        * Handler to get he coordinates of the starting touch
-        */
+         * Handler to get he coordinates of the starting touch
+         */
         function touchStartHandler(e) {
 
             if (isReallyTouch(e)) {
@@ -848,8 +848,8 @@
 
 
         /**
-        * Adds the possibility to auto scroll through sections on touch devices.
-        */
+         * Adds the possibility to auto scroll through sections on touch devices.
+         */
         function addTouchHandler() {
             if (isTouch || isTouchDevice) {
                 document.removeEventListener(events.touchstart, touchStartHandler);
@@ -861,8 +861,8 @@
         }
 
         /**
-        * Removes the auto scrolling for touch devices.
-        */
+         * Removes the auto scrolling for touch devices.
+         */
         function removeTouchHandler() {
             if (isTouch || isTouchDevice) {
                 document.removeEventListener(events.touchstart, touchStartHandler);
@@ -871,9 +871,9 @@
         }
 
         /*
-        * Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
-        * http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
-        */
+         * Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
+         * http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
+         */
         function getMSPointer() {
             var pointer;
 
@@ -891,9 +891,9 @@
         }
 
         /**
-        * Gets the pageX and pageY properties depending on the browser.
-        * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
-        */
+         * Gets the pageX and pageY properties depending on the browser.
+         * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
+         */
         function getEventsPage(e) {
             var events = [];
 
@@ -910,9 +910,9 @@
         }
 
         /**
-        * Destroy multiscroll.js plugin's events
-        */
-        MS.destroy = function () {
+         * Destroy multiscroll.js plugin's events
+         */
+        MS.destroy = function() {
             MS.setKeyboardScrolling(false);
             MS.setMouseWheelScrolling(false);
             removeTouchHandler();
@@ -928,9 +928,9 @@
         };
 
         /**
-        * Build multiscroll.js plugin's events after destroy
-        */
-        MS.build = function () {
+         * Build multiscroll.js plugin's events after destroy
+         */
+        MS.build = function() {
             MS.setKeyboardScrolling(true);
             MS.setMouseWheelScrolling(true);
             addTouchHandler();
