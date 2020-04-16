@@ -1,4 +1,5 @@
 /* Bembos */
+
 @font-face {
     font-family: "big noodle";
     src: url("../assets/fonts/big_noodle_titling.ttf");
@@ -14,7 +15,9 @@
     src: url("../assets/fonts/DIN1451StdEngschrift.ttf");
 }
 
+
 /* NGR */
+
 @font-face {
     font-family: "omnes";
     src: url("../assets/fonts/Omnes_Regular.ttf");
@@ -25,7 +28,9 @@
     src: url("../assets/fonts/omnes-semibold-webfont.ttf");
 }
 
+
 /* PJ */
+
 @font-face {
     font-family: "italian-bold";
     src: url("../assets/fonts/ItalianPlateNo2-Bold.otf");
@@ -36,7 +41,9 @@
     src: url("../assets/fonts/ItalianPlateNo2-Regular.otf");
 }
 
+
 /* CW */
+
 @font-face {
     font-family: "frankfurter";
     src: url("../assets/fonts/FrankfurterMediumStdRegular.otf");
@@ -47,7 +54,9 @@
     src: url("../assets/fonts/helveticaneue.ttf");
 }
 
+
 /* DB */
+
 @font-face {
     font-family: "Tungsten-bold";
     src: url("../assets/fonts/Tungsten-Bold.otf");
@@ -57,6 +66,7 @@
     font-family: "Archer";
     src: url("../assets/fonts/Archer-Medium-Pro.otf");
 }
+
 
 /* PP */
 
@@ -70,6 +80,7 @@
     src: url("../assets/fonts/MetroMediumLT-Two.ttf");
 }
 
+
 /* DD */
 
 @font-face {
@@ -82,18 +93,13 @@
     src: url("../assets/fonts/FrankfurterDMed.ttf");
 }
 
-
 @font-face {
     font-family: 'icons-ngr';
     src: url('./font/icons-ngr.eot?96623913');
-    src: url('./font/icons-ngr.eot?96623913#iefix') format('embedded-opentype'),
-        url('./font/icons-ngr.woff?96623913') format('woff'),
-        url('./font/icons-ngr.ttf?96623913') format('truetype'),
-        url('./font/icons-ngr.svg?96623913#icons-ngr') format('svg');
+    src: url('./font/icons-ngr.eot?96623913#iefix') format('embedded-opentype'), url('./font/icons-ngr.woff?96623913') format('woff'), url('./font/icons-ngr.ttf?96623913') format('truetype'), url('./font/icons-ngr.svg?96623913#icons-ngr') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
     margin: 0;
@@ -103,7 +109,6 @@ body {
 p,
 h2 {
     margin: 0;
-
 }
 
 a {
@@ -168,7 +173,6 @@ a {
     text-align: center;
 }
 
-
 .text-white {
     color: white;
 }
@@ -180,7 +184,6 @@ a {
 .title-brand {
     font-size: 44px;
     margin-bottom: 20px;
-
 }
 
 .title-bb {
@@ -193,7 +196,6 @@ a {
     margin-bottom: 2em;
 }
 
-
 .text-content-bb {
     font-family: din1451, sans-serif;
 }
@@ -201,13 +203,11 @@ a {
 .text-content-ngr {
     font-family: omnes-semibold, sans-serif;
     font-size: 2vw;
-
 }
 
 .text-content-counter {
     font-family: omnes-semibold, sans-serif;
     font-size: 36px;
-
 }
 
 .phrases-star {
@@ -233,7 +233,6 @@ a {
 .text-content-pj {
     font-family: italian, sans-serif;
     font-size: 22px;
-
 }
 
 .text-content-cw {
@@ -256,7 +255,6 @@ a {
     font-size: 24px;
 }
 
-
 .title-brand-cw {
     font-family: frankfurter;
     text-transform: uppercase;
@@ -268,7 +266,6 @@ a {
     text-transform: uppercase;
     font-size: 50px;
 }
-
 
 .title-brand-db {
     font-family: Tungsten-bold, sans-serif;
@@ -309,30 +306,21 @@ a {
     justify-content: center;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
     /* animation: pulse 3s infinite; */
-
 }
-
 
 @keyframes pulse {
     0% {
         transform: scale(0.9);
-
     }
-
     70% {
         transform: scale(1);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-
     }
-
     100% {
         transform: scale(0.9);
         box-shadow: 0 0 0 0px rgba(255, 255, 255, 0)
     }
 }
-
-
-
 
 .icon-group {
     width: 40px;
@@ -344,7 +332,6 @@ a {
     position: relative;
     right: 2px;
 }
-
 
 .icon-font-fac {
     font-size: 40px;
@@ -401,7 +388,6 @@ a {
     background-color: #CF112D;
     color: white;
     transition: .5s;
-
 }
 
 .circle-db:hover {
@@ -451,7 +437,6 @@ a {
 }
 
 .container-brand {
-
     display: grid;
     display: -ms-grid;
     grid-template-columns: minmax(auto, 450px);
@@ -467,7 +452,6 @@ a {
     top: 30%;
     left: -52%;
     max-width: 710px;
-
 }
 
 .intercorp {
@@ -487,7 +471,6 @@ a {
     margin-top: 5px;
 }
 
-
 .arrow-down {
     left: 0px;
     top: 94%;
@@ -504,7 +487,6 @@ a {
     width: 100px;
 }
 
-
 .arrow-down-ngr {
     left: 0px;
     top: 90%;
@@ -516,11 +498,9 @@ a {
         opacity: 0;
         transform: translateX(-50%) translateY(-20px);
     }
-
     50% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(10px);
@@ -538,7 +518,6 @@ a {
 .icon-down-rotate {
     left: 0px;
     top: 94%;
-
     animation: scrollUp 1.5s infinite cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -547,21 +526,17 @@ a {
         opacity: 0;
         transform: translateX(-50%) translateY(10px);
     }
-
     50% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         transform: translateX(-50%) translateY(-20px);
     }
 }
 
-
 .icon-scroll {
     width: 30px;
-
 }
 
 .box-logo-intercorp {
@@ -570,7 +545,6 @@ a {
     position: absolute;
     bottom: 10px;
     left: 10px;
-
 }
 
 .box-logo-intercorp img {
@@ -583,13 +557,11 @@ a {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
-
 }
 
 .logo-ngr-fix {
     width: 100px;
 }
-
 
 .fixed-container,
 .fixed-container-mob {
@@ -598,7 +570,6 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 .flex-center {
     display: flex;
@@ -615,7 +586,6 @@ a {
     justify-items: center;
 }
 
-
 .grid-links-ngr {
     display: grid;
     display: -ms-grid;
@@ -624,7 +594,6 @@ a {
     align-items: center;
     justify-items: center;
 }
-
 
 .hide {
     display: none;
@@ -646,16 +615,17 @@ a {
     filter: opacity(60%);
 }
 
-.section2{
+.section2 {
     background-color: white;
     z-index: 4;
 }
 
-.contain-video{
-     width: 100%; 
-     height: 100%;
-     background: rgba(0, 0, 0, 0.8);
+.contain-video {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
+
 #myVideo2 {
     position: absolute;
     right: 0;
@@ -671,8 +641,6 @@ a {
     filter: opacity(50%);
 }
 
-
-
 .number-ngr {
     font-size: 150px;
     transition: all 0.5s ease-in;
@@ -687,218 +655,169 @@ a {
     left: 65%;
 }
 
-
 @media screen and (max-width: 1024px) {
-
     .container-brand {
         padding: 0 10px;
     }
-
     .container-logo-fix-mob {
         width: 200px;
         height: 85px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: white;
-
     }
-
     .size-logo {
         width: 150px;
         height: 65px;
     }
-
     .logo-ngr-fix {
         width: 140px;
     }
-
     .logo-fix-mob {
         width: 100px;
     }
-
     .hide-mobile {
         display: none;
     }
-
     #myVideo {
         filter: opacity(35%);
     }
-
     .size-certification {
         width: 18vw;
     }
-
     .pos-certification {
         top: 0;
         left: 78%;
         z-index: 9;
-
     }
-
     .logo-ngr-mob {
         z-index: 8;
         top: 22.5%;
         left: 22.5vw;
-
     }
-
     .phrase-ngr {
         z-index: 8;
         padding: 0 1em;
         top: 55%;
         transform: translateY(-50%);
-
     }
-
     .text-content-ngr {
         font-size: 8vw;
     }
-
     .pos-icon {
         z-index: 5;
         bottom: 1em;
         width: 100%;
     }
-
     .circle-ngr {
         background-color: transparent;
         border: 3px solid white;
         color: white;
     }
-
     .text-link-ngr {
         padding: 0 4px;
         color: white;
     }
-
     .arrow-down {
         left: 50%;
     }
-
     .container-employee {
         height: 100vh;
         padding: 0 1em;
         box-sizing: border-box;
     }
-
     .number-ngr {
         font-size: 90px;
-
     }
-
     .bg-bb-mobile {
         height: 100vh;
         background-image: url(../assets/images/bbmobile.jpg);
         background-size: cover;
     }
-
     .bg-pj-mobile {
         height: 100vh;
         background-image: url(../assets/images/pjmobile.jpg);
         background-size: cover;
     }
-
     .bg-cw-mobile {
         height: 100vh;
         background-image: url(../assets/images/cwmobile.jpg);
         background-size: cover;
     }
-
     .bg-db-mobile {
         height: 100vh;
         background-image: url(../assets/images/dbmobile.jpg);
         background-size: cover;
     }
-
     .bg-pp-mobile {
         height: 100vh;
         background-image: url(../assets/images/ppmobile.jpg);
         background-size: cover;
     }
-
     .bg-dd-mobile {
         height: 100vh;
         background-image: url(../assets/images/ddmobile.png);
         background-size: cover;
     }
-
     .bg-wh-mobile {
         height: 100vh;
         background-image: url(../assets/images/whmobile.jpg);
         background-size: cover;
     }
-
-
     .content-brand {
         padding-top: 5em;
         padding-left: 1em;
         padding-right: 1em;
     }
-
     .logo-bb {
         width: 200px;
     }
-
     .logo-ngr-mob-img {
         width: 55vw;
     }
-
     .logo-pj {
         width: 180px;
     }
-
     .title-bb {
         font-size: 30px;
     }
-
     .title-brand-pj {
         font-size: 35px;
         margin-bottom: 10px;
     }
-
     .text-content-bb {
         font-size: 20px;
     }
-
     .title-brand-dd {
         font-size: 25px;
     }
-
     .text-content-dd {
         font-size: 18px;
     }
-
     .logo-pp {
         width: 150px;
     }
-
     .title-brand-pp {
         font-size: 20px;
     }
-
     .text-content-pp {
         font-size: 18px;
     }
-
     .title-brand-db {
         font-size: 36px;
     }
-
     .circle-ngr:hover {
         box-sizing: border-box;
         background-color: transparent;
         color: white;
         border: 2px solid white;
     }
-
     .title-brand-wh {
         font-size: 36px;
     }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
     .bg-bb-mobile,
     .bg-pj-mobile,
     .bg-cw-mobile,
@@ -908,109 +827,83 @@ a {
     .bg-wh-mobile {
         background-position-y: 65%;
     }
-
     .logo-bb {
         width: 300px;
     }
-
     .title-bb,
     .title-brand-db {
         font-size: 65px;
     }
-
     .text-content-bb {
         font-size: 40px;
     }
-
     .logo-pj {
         width: 250px;
     }
-
     .title-brand-pj {
         font-size: 65px;
-
     }
-
     .text-content-pj {
         font-size: 35px;
     }
-
     .text-content-cw,
     .text-content-db {
         font-size: 35px;
     }
-
     .logo-cw {
         width: 200px;
         margin-top: 15px;
     }
-
     .logo-pp {
         width: 250px;
     }
-
     .title-brand-pp,
     .text-content-pp,
     .text-content-dd {
         font-size: 35px;
     }
-
     .title-brand-dd {
         font-size: 55px;
     }
-
     .text-content-ngr {
         font-size: 60px;
     }
 }
 
-
-
 @media screen and (min-width: 1025px) {
     .hide-mobile {
         display: block;
     }
-
     .hide-desktop {
         display: none;
     }
-
 }
 
 @media screen and (max-height: 568px) {
     .text-content-ngr {
         font-size: 7.5vw
     }
-
     .text-content-counter {
         font-size: 30px;
     }
-
     .number-ngr {
         font-size: 50px;
     }
-
     .logo-bb {
         width: 175px;
     }
-
     .logo-pj {
         width: 140px;
     }
-
     .logo-cw {
         width: 125px;
     }
-
     .title-brand-db {
         font-size: 30px;
     }
-
     .text-content-db {
-
         font-size: 18px;
     }
-
     .title-brand-pp {
         font-size: 18px;
     }
@@ -1019,131 +912,104 @@ a {
 
 /* Styles Mobile Horizontal */
 
-
 @media (max-height: 420px) {
     .text-content-ngr {
         font-size: 6vh;
     }
-
     .logo-ngr-mob-img {
         width: 30vw;
     }
-
     .size-certification {
         width: 15vh;
     }
-
     .logo-ngr-mob {
-
         left: 38vw;
     }
-
     .circle-icon {
         width: 40px;
         height: 40px;
     }
-
     .icon-font,
     .icon-font-fac {
         font-size: 6vh;
     }
-
     .number-ngr {
         font-size: 8vh;
     }
-
     .gap-mobile {
         grid-gap: 1em;
     }
-
     .text-content-counter {
         font-size: 7vh;
     }
-
     .text-link-ngr {
         font-size: 10px;
     }
-
     /* Bemnbos */
     .logo-bb {
         width: 35vh;
     }
-
     .title-bb {
         font-size: 6vh;
         margin-bottom: 5px;
         text-align: center;
     }
-
     .text-content-bb {
         font-size: 4.5vh;
         text-align: center;
     }
-
     /* Papa Johns */
-
     .title-brand-pj {
         font-size: 6.5vh;
         text-align: center;
         margin-bottom: 5px;
     }
-
     .text-content-pj {
         font-size: 4vh;
         text-align: center;
     }
-
     .logo-pj {
         width: 30vh;
     }
-
     /* Chinawok */
     .logo-cw {
         width: 25vh;
     }
-
     .text-content-cw {
         font-size: 3.8vh;
         text-align: center;
     }
-
     /* DOn Belisario */
-
     .title-brand-db {
         font-size: 6vh;
         margin-bottom: 5px;
         text-align: center;
     }
-
     .text-content-db {
         font-size: 4vh;
         text-align: center;
     }
-
     /* Popeyes */
     .logo-pp {
         width: 28vh;
     }
-
     .title-brand-pp {
         font-size: 3.2vh;
         margin-bottom: 5px;
     }
-
     .text-content-pp {
         font-size: 4vh;
     }
-
     /* DD */
     .text-content-dd {
         font-size: 5vh;
     }
-
     .title-brand-dd {
         font-size: 5vh;
         margin-bottom: 5px;
     }
 }
+
 
 /* Sección Legal */
 
@@ -1156,7 +1022,6 @@ a {
 }
 
 .container-legal {
-
     border: 1px solid #ced4da;
 }
 
@@ -1174,9 +1039,7 @@ a {
 }
 
 .block-legal-grid {
-
     border-bottom: 1px solid #ced4da;
-
     align-items: center;
 }
 
@@ -1198,9 +1061,7 @@ a {
 }
 
 .logo-ngr-legal {
-
     width: 100px;
-
 }
 
 .link-long {
@@ -1208,13 +1069,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
     .logo-ngr-legal {
-
         width: 140px;
-
     }
-
     .legal-box {
         font-family: omnes, sans-serif;
         color: #978b82;
@@ -1224,17 +1081,21 @@ a {
         display: grid;
         justify-content: center;
         padding: 0 1em 1em 1em;
-
     }
-
     .block-legal-grid {
         display: grid;
         border-bottom: 1px solid #ced4da;
         grid-template-columns: .5fr 2fr;
         align-items: center;
     }
-
     .title-table-legal {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .home-text-center {
+        top: 35%;
+        left: -46%;
     }
 }
