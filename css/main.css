@@ -1099,3 +1099,24 @@ a {
         left: -46%;
     }
 }
+
+.pos-r-2 {
+    right: 170px;
+    bottom: 20px;
+}
+
+
+/* Boton  Nuevo de reservas */
+
+.circle-ngr-3 {
+    background-color: rgb(172, 22, 44);
+    color: white;
+    transition: .5s;
+}
+
+.circle-ngr-3:hover {
+    box-sizing: border-box;
+    background-color: transparent;
+    color: rgb(172, 22, 44);
+    border: 2px solid rgb(172, 22, 44);
+}
