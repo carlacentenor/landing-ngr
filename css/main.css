@@ -651,7 +651,7 @@
         left: 65%;
     }
     
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
         .container-brand {
             padding: 0 10px;
         }
@@ -817,9 +817,15 @@
         .text-content-ngr {
             font-size: 4vw;
         }
+        .home-text-center {
+            left: -70%;
+        }
     }
     
     @media screen and (min-width: 768px) and (max-width: 1022px) {
+        .title-brand--md {
+            padding: 20px;
+        }
         .size-certification {
             width: 15vw;
         }
@@ -883,9 +889,12 @@
         .text-content-ngr {
             font-size: 40px;
         }
+        .number-ngr {
+            font-size: 100px;
+        }
     }
     
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1023px) {
         .hide-mobile {
             display: block;
         }
