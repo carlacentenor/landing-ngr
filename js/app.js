@@ -1,5 +1,10 @@
+$(document).ready(function() {
+    var video = document.getElementById("myVideo");
 
-$(document).ready(function () {
+
+
+
+
 
     if (screen.width < 1025) {
         new fullScroll({
@@ -12,8 +17,7 @@ $(document).ready(function () {
 
 
 
-    }
-    else {
+    } else {
         $('#myContainer').multiscroll({
             // navigation: true,
             loopBottom: false,
@@ -22,9 +26,6 @@ $(document).ready(function () {
         });
     }
 
-  
+
 
 });
-
-
-
