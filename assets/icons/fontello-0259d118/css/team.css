@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'icons-ngr';
-  src: url('../font/icons-ngr.eot?69123183');
-  src: url('../font/icons-ngr.eot?69123183#iefix') format('embedded-opentype'),
-       url('../font/icons-ngr.woff2?69123183') format('woff2'),
-       url('../font/icons-ngr.woff?69123183') format('woff'),
-       url('../font/icons-ngr.ttf?69123183') format('truetype'),
-       url('../font/icons-ngr.svg?69123183#icons-ngr') format('svg');
+  font-family: 'team';
+  src: url('../font/team.eot?63953296');
+  src: url('../font/team.eot?63953296#iefix') format('embedded-opentype'),
+       url('../font/team.woff2?63953296') format('woff2'),
+       url('../font/team.woff?63953296') format('woff'),
+       url('../font/team.ttf?63953296') format('truetype'),
+       url('../font/team.svg?63953296#team') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,14 +14,14 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'icons-ngr';
-    src: url('../font/icons-ngr.svg?69123183#icons-ngr') format('svg');
+    font-family: 'team';
+    src: url('../font/team.svg?63953296#team') format('svg');
   }
 }
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "icons-ngr";
+  font-family: "team";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -55,6 +55,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-homedb:before { content: '\e800'; } /* '' */
-.icon-workdb:before { content: '\e801'; } /* '' */
-.icon-facturadb:before { content: '\e802'; } /* '' */
+.icon-facturadb:before { content: '\e800'; } /* '' */
+.icon-homedb:before { content: '\e801'; } /* '' */
+.icon-workdb:before { content: '\e802'; } /* '' */
+.icon-conecta:before { content: '\e803'; } /* '' */
