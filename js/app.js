@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 
 
-    if (screen.width < 1025) {
+    if (screen.width < 1023) {
         new fullScroll({
             mainElement: 'main',
             displayDots: false,
