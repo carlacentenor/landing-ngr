@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'team';
-  src: url('../font/team.eot?63953296');
-  src: url('../font/team.eot?63953296#iefix') format('embedded-opentype'),
-       url('../font/team.woff2?63953296') format('woff2'),
-       url('../font/team.woff?63953296') format('woff'),
-       url('../font/team.ttf?63953296') format('truetype'),
-       url('../font/team.svg?63953296#team') format('svg');
+  src: url('../font/team.eot?31976791');
+  src: url('../font/team.eot?31976791#iefix') format('embedded-opentype'),
+       url('../font/team.woff2?31976791') format('woff2'),
+       url('../font/team.woff?31976791') format('woff'),
+       url('../font/team.ttf?31976791') format('truetype'),
+       url('../font/team.svg?31976791#team') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'team';
-    src: url('../font/team.svg?63953296#team') format('svg');
+    src: url('../font/team.svg?31976791#team') format('svg');
   }
 }
 */
@@ -59,3 +59,4 @@
 .icon-homedb:before { content: '\e801'; } /* '' */
 .icon-workdb:before { content: '\e802'; } /* '' */
 .icon-conecta:before { content: '\e803'; } /* '' */
+.icon-seo-y-web:before { content: '\e804'; } /* '' */
