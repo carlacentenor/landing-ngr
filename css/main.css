@@ -209,7 +209,12 @@
     }
     
     .pos-l {
-        left: 10px;
+        left: 20px;
+        bottom: 20px;
+    }
+    
+    .pos-icon-self {
+        left: 140px;
         bottom: 20px;
     }
     
