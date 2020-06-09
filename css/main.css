@@ -596,7 +596,7 @@
         display: -ms-grid;
         grid-template-columns: repeat(2, 1fr);
         -ms-grid-columns: 1fr 1fr;
-        align-items: center;
+        align-items: flex-start;
         justify-items: center;
     }
     
@@ -1142,6 +1142,32 @@
         background-color: transparent;
         color: rgb(172, 22, 44);
         border: 2px solid rgb(172, 22, 44);
+    }
+    
+    .circle-ngr-4 {
+        background-color: #E9453E;
+        color: white;
+        transition: .5s;
+    }
+    
+    .circle-ngr-4:hover {
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #E9453E;
+        border: 2px solid #E9453E;
+    }
+    
+    .circle-ngr-5 {
+        background-color: #FAC36F;
+        color: white;
+        transition: .5s;
+    }
+    
+    .circle-ngr-5:hover {
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #FAC36F;
+        border: 2px solid #FAC36F;
     }
     
     .w-100 {
